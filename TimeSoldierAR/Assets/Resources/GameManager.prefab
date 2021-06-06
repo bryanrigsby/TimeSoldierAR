@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5738370881263112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5738370881263222}
+  - component: {fileID: 5738370881263113}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5738370881263222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5738370881263112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 131.37222, y: 393.399, z: -8132.568}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5738372266580256}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5738370881263113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5738370881263112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4a498cdf38c428ab7b7ba8f6a51768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  continueButton: {fileID: 0}
+  mainMenuCanvas: {fileID: 0}
+  loadingCanvas: {fileID: 0}
+  arCanvas: {fileID: 0}
+  uiCanvas: {fileID: 0}
+  arCanvasTextGO: {fileID: 0}
+  timer: 3
+  arTextTimer: 1
+  arCanvasText: {fileID: 0}
+  playerStats: {fileID: 5738372266580259}
+  itemsHeld:
+  - Hp Ptn
+  - Mp Ptn
+  - Wdn Amr
+  - Wdn Swd
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  numberOfItems: 050000000200000001000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  referenceItems:
+  - {fileID: 8443130453220699989, guid: 15db31342237e468fbb744d6b019a9dd, type: 3}
+  - {fileID: 8983891721615786896, guid: dc4c7cc0986184ac593aae2bd88b2eab, type: 3}
+  - {fileID: 249474812298238499, guid: 0730925abdb74434d9492bd431a3edd1, type: 3}
+  - {fileID: 1792690812601638285, guid: d4b3eb244b8f547e695b7b03a93a0672, type: 3}
+  - {fileID: 3945458182616175396, guid: e93bb12c1e68348d59c59dcead18bcc7, type: 3}
+  - {fileID: 6910007687018341173, guid: 2f99071636d55476ab639039f9c1c22e, type: 3}
+  currentGold: 100
+--- !u!1 &5738372266580258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5738372266580256}
+  - component: {fileID: 5738372266580259}
+  m_Layer: 0
+  m_Name: PlayerStats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5738372266580256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5738372266580258}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 295.96017, y: 177.5177, z: -18884.203}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5738370881263222}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5738372266580259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5738372266580258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46f1c7ed899d471c83ce756a9ce80fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLevel: 1
+  currentExp: 0
+  expToNextLevel: 
+  maxLevel: 100
+  baseExp: 100
+  maxHp: 50
+  maxMp: 25
+  currentHp: 50
+  currentMp: 25
+  strength: 5
+  defense: 5
+  wpnPower: 0
+  armrPower: 0
+  equippedWpn: Hands
+  equippedArmr: T-shirt
+  spells:
+  - Fire
+  - Ice
+  - Heal
+  - Water
+  - Lit
+  - Fire2
+  - Ice2
+  - Heal2
+  - Water2
+  - Lit2
+  - HealAll
+  - Death
+  referenceSpells:
+  - {fileID: 5064397434394372955, guid: 70bfda98213db449aa88a6c64849cc1a, type: 3}
+  - {fileID: 8611608135087312973, guid: 6a05715636f3642eabe06b1d9767d3a4, type: 3}
+  - {fileID: 7992372650537525924, guid: 91330d92da82f468098cf63af173e226, type: 3}
+  - {fileID: 2411063858886259009, guid: 8fdf4ce8599e84504aaaca091e7d15d6, type: 3}
+  - {fileID: 4060111351676360718, guid: 5a2945bbe070d48f595c18db2ac31640, type: 3}
+  - {fileID: 1670324571137415695, guid: 20930cd4fd6de4f2fbb491dc29047450, type: 3}
+  - {fileID: 5552197266633096388, guid: 189228b1eed1e402cb9921457d73c472, type: 3}
+  - {fileID: 7169134823933952964, guid: 30fd46fc22b69492096d9a2b65cc5bdb, type: 3}
+  - {fileID: 228476514281014219, guid: eb017f0b0952e46fca4ccb1f5af09129, type: 3}
+  - {fileID: 5956098360746662887, guid: 6b808f9c85d324c48940db1dfe60a99a, type: 3}
+  - {fileID: 9063102926796187091, guid: 240bb2da0de7f4cf8a312fae1f2137d5, type: 3}
+  - {fileID: 6440679513135984502, guid: 92cfbea16ef534c36b15e4835c1cd3c7, type: 3}
