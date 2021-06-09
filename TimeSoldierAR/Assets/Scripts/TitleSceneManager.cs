@@ -64,6 +64,7 @@ public class TitleSceneManager : MonoBehaviour
     {
         Debug.Log("continue clicked clicked");
         AudioManager.instance.ButtonSFX();
+        AudioManager.instance.StopMusic();
         GameManager.instance.LoadData();
         mainMenuCanvas.SetActive(false);
         loadingCanvas.SetActive(true);
@@ -74,6 +75,7 @@ public class TitleSceneManager : MonoBehaviour
     {
         Debug.Log("new game clicked");
         AudioManager.instance.ButtonSFX();
+        AudioManager.instance.StopMusic();
         mainMenuCanvas.SetActive(false);
         loadingCanvas.SetActive(true);
         timerBool = true;
