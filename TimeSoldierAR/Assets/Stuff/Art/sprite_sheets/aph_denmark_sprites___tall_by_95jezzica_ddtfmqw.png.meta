@@ -1,0 +1,1279 @@
+fileFormatVersion: 2
+guid: 2680a8585e81146079431f4f8d66f2b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8159415747969898168
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_0
+  - first:
+      213: 9005599611899803220
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_1
+  - first:
+      213: 1949330989757909801
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_2
+  - first:
+      213: -2207528167421665570
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_3
+  - first:
+      213: -7034926361251853680
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_4
+  - first:
+      213: 5916138872054011781
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_5
+  - first:
+      213: -5811489956247908062
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_6
+  - first:
+      213: -4773763282624366875
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_7
+  - first:
+      213: 7790732405435573075
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_8
+  - first:
+      213: 2531275096696019031
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_9
+  - first:
+      213: -1456884419916605620
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_10
+  - first:
+      213: -4097093906430039822
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_11
+  - first:
+      213: -4721828414165965642
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_12
+  - first:
+      213: 5531085349015050543
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_13
+  - first:
+      213: -1842910112067147051
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_14
+  - first:
+      213: -1082965626060458401
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_15
+  - first:
+      213: 3309152334090484258
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_16
+  - first:
+      213: -4526262678806699878
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_17
+  - first:
+      213: 4026076384815400462
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_18
+  - first:
+      213: -954779008811619637
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_19
+  - first:
+      213: -3605015121175175416
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_20
+  - first:
+      213: 2023396709662915165
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_21
+  - first:
+      213: 7720141741171123377
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_22
+  - first:
+      213: -7923846662577014423
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_23
+  - first:
+      213: -8245831874890330284
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_24
+  - first:
+      213: 6161747127906429768
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_25
+  - first:
+      213: 8396464081689365740
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_26
+  - first:
+      213: 2715608550550713233
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_27
+  - first:
+      213: -8465343862860725145
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_28
+  - first:
+      213: 6474903614175099981
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_29
+  - first:
+      213: 7702386297276496705
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_30
+  - first:
+      213: -900569381913527972
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_31
+  - first:
+      213: -2228067218151967401
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_32
+  - first:
+      213: 5547510885752501728
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_33
+  - first:
+      213: 433966512132256955
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_34
+  - first:
+      213: -5132661943917144857
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_35
+  - first:
+      213: -1101492151717115124
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_36
+  - first:
+      213: 1314251204606676258
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_37
+  - first:
+      213: 6960389550271105811
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_38
+  - first:
+      213: -3446708918679004860
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_39
+  - first:
+      213: -8800998935560480253
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_40
+  - first:
+      213: -5550156650849482164
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_41
+  - first:
+      213: -239372907024094701
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_42
+  - first:
+      213: -6557872024543601296
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_43
+  - first:
+      213: 8979657285014611708
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_44
+  - first:
+      213: -821482523429363394
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_45
+  - first:
+      213: -3579561823300133789
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_46
+  - first:
+      213: 8859276930630342540
+    second: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_47
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92adc823e0da140339f2f51221098a92
+      internalID: -8159415747969898168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b19db958231d49f89ab3f0bcf75b508
+      internalID: 9005599611899803220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c531a46c6ed46048d2b8b1bd2cc707
+      internalID: 1949330989757909801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b0cb85a20374e7ca178c534ebdd832
+      internalID: -2207528167421665570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f715aff1f5844dbb102d6d7b65824b
+      internalID: -7034926361251853680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3876b1786a442edafa73adfbde5c23
+      internalID: 5916138872054011781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921e76dc98878440192ee1fd7b3734f1
+      internalID: -5811489956247908062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b98dde932ea441599408d93a7144e6
+      internalID: -4773763282624366875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd913b0615eb40a29c9e65fa1fdbf7e
+      internalID: 7790732405435573075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5196a2c8991f54be4b42b9b0ef73e589
+      internalID: 2531275096696019031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc7e550c60314acf9021c2718b5ee8f
+      internalID: -1456884419916605620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6018c0da4bfc44897a82a57a825f78b1
+      internalID: -4097093906430039822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd93809ffc254849874faa12ab42381
+      internalID: -4721828414165965642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b0b868d97fb4bf399b82f79694db76
+      internalID: 5531085349015050543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282f9b8fa8af04a93a0155666dd59383
+      internalID: -1842910112067147051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60282ed9b9b104e949039aa786f25bdf
+      internalID: -1082965626060458401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346647defa3a941a3a11818abc223db5
+      internalID: 3309152334090484258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a397f35d4e648d59b4230e1391e8a4
+      internalID: -4526262678806699878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e5dde9105bd42039f2c52bd818ca77
+      internalID: 4026076384815400462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95ee7e01f0234241b62d4dd057b418e
+      internalID: -954779008811619637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77116431ce9f4d5888e53d768489ef3
+      internalID: -3605015121175175416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7ec22594e7e4bd0877d3af5c8273b5
+      internalID: 2023396709662915165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babac47b62ab142d0b87571e6a93cf70
+      internalID: 7720141741171123377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c264328845fac48799dbc5c6eb8ee817
+      internalID: -7923846662577014423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f345c75f1a6f427fb6151ab1e2f7151
+      internalID: -8245831874890330284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d04411201264baf9d3926a70a12d92
+      internalID: 6161747127906429768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28f3b7826fa945e3aa1142af3e4b627
+      internalID: 8396464081689365740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5355fd506ccf04a6d953ddb3b0eca1be
+      internalID: 2715608550550713233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566e378182f5646ae8ee37436e5852bc
+      internalID: -8465343862860725145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a635f2c86892443798f3933f70f644ea
+      internalID: 6474903614175099981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f5efc928a1541a481fddeeb2dc80f4
+      internalID: 7702386297276496705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d117a830c374b8382a1d1fe11e890c
+      internalID: -900569381913527972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2d135f421d346119fca53dd1a34fe7
+      internalID: -2228067218151967401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2056fa4ccc3418b8c436e04fa9fcb0
+      internalID: 5547510885752501728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd6d783cbce24c63bb839fdb5b3c508
+      internalID: 433966512132256955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07144aeaac2b146a8b6fde4e2c5bf336
+      internalID: -5132661943917144857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30b23a5e86384573b14437a76a8d108
+      internalID: -1101492151717115124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f19c34a2b3a43bb80fffb2fce6e8b7
+      internalID: 1314251204606676258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b7166409fb244d9b88fce273e97fef
+      internalID: 6960389550271105811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4492fd15698a4aee8c48c12336d0c73
+      internalID: -3446708918679004860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1164b2c8727d14ed38915a66bf8e7c38
+      internalID: -8800998935560480253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f929cdc2fc045fb80bd22fd9b81ced
+      internalID: -5550156650849482164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab2cef6445a54f8fb9a4ba174daaa42
+      internalID: -239372907024094701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf8bcd1527dd4eedb033ca193ebc3b9
+      internalID: -6557872024543601296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a1577b741f74c239638de4c8ef9b98
+      internalID: 8979657285014611708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112e0f9b126d140ad8efd871d1b9ca00
+      internalID: -821482523429363394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_46
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa7a66e058fc4ec6b279b4da1145f08
+      internalID: -3579561823300133789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aph_denmark_sprites___tall_by_95jezzica_ddtfmqw_47
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e4d009c30734074884cd161934c509
+      internalID: 8859276930630342540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8204b5e7930a349dbba63acd1597fc02
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

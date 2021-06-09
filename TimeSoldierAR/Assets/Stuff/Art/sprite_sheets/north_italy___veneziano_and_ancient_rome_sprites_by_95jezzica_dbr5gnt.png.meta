@@ -1,0 +1,2431 @@
+fileFormatVersion: 2
+guid: 41fb62b2bbdde4d319b01b6a5778a8f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8851482762371426959
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_0
+  - first:
+      213: 4086069042910221830
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_1
+  - first:
+      213: -9070795596339596987
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_2
+  - first:
+      213: -1626968819193168073
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_3
+  - first:
+      213: 9104861847029574410
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_4
+  - first:
+      213: 3407352586542459183
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_5
+  - first:
+      213: 5513495355483996659
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_6
+  - first:
+      213: -5220658618211255186
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_7
+  - first:
+      213: -5387111013724214702
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_8
+  - first:
+      213: 6364331647804260464
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_9
+  - first:
+      213: 1558195439677949092
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_10
+  - first:
+      213: 3968049130483176550
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_11
+  - first:
+      213: 2516354424014436381
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_12
+  - first:
+      213: 8743123688266444407
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_13
+  - first:
+      213: -206284676829115153
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_14
+  - first:
+      213: 6823704795362838511
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_15
+  - first:
+      213: -7600549692636316689
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_16
+  - first:
+      213: -2339944745331416822
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_17
+  - first:
+      213: -7777522691192730661
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_18
+  - first:
+      213: 6699973681518218918
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_19
+  - first:
+      213: 3761149047767696252
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_20
+  - first:
+      213: -3168677315715339853
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_21
+  - first:
+      213: -7874749191475751113
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_22
+  - first:
+      213: -6647833995207833184
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_23
+  - first:
+      213: -5155526177412265842
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_24
+  - first:
+      213: -1191045156083833276
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_25
+  - first:
+      213: 4836597440111357655
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_26
+  - first:
+      213: -5090812635772931508
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_27
+  - first:
+      213: 7269551278067123220
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_28
+  - first:
+      213: 4558463507108236818
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_29
+  - first:
+      213: 7695410330240454249
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_30
+  - first:
+      213: 6411634766295143134
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_31
+  - first:
+      213: 6313088152671213475
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_32
+  - first:
+      213: -7046663064687988333
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_33
+  - first:
+      213: -8894117930567497226
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_34
+  - first:
+      213: 5470137129011520297
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_35
+  - first:
+      213: -6385064464227304809
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_36
+  - first:
+      213: 897312044037219740
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_37
+  - first:
+      213: 8247442470566036330
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_38
+  - first:
+      213: -7432758063865731638
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_39
+  - first:
+      213: 686447929631992826
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_40
+  - first:
+      213: 3230010150492022874
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_41
+  - first:
+      213: 1175222615359495187
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_42
+  - first:
+      213: -2729672879087605140
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_43
+  - first:
+      213: -1709862671170444379
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_44
+  - first:
+      213: 4923909054456642029
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_45
+  - first:
+      213: 65002658141349721
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_46
+  - first:
+      213: 492628247096339053
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_47
+  - first:
+      213: 7822561969006900877
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_48
+  - first:
+      213: 6106025814015781722
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_49
+  - first:
+      213: 1912240662559391515
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_50
+  - first:
+      213: 9031026174496776090
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_51
+  - first:
+      213: 1848924106064250531
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_52
+  - first:
+      213: -1716532603065262442
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_53
+  - first:
+      213: -1888349364763178974
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_54
+  - first:
+      213: -288963641743583074
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_55
+  - first:
+      213: 8747293972377670079
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_56
+  - first:
+      213: -8577514579036213511
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_57
+  - first:
+      213: 4351047036005974846
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_58
+  - first:
+      213: 6751652478129072954
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_59
+  - first:
+      213: 8681579222232571730
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_60
+  - first:
+      213: -1705005284643695987
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_61
+  - first:
+      213: -2933841476572876829
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_62
+  - first:
+      213: 2272147333016344692
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_63
+  - first:
+      213: 4573802749507906292
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_64
+  - first:
+      213: -4500916566168526517
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_65
+  - first:
+      213: 5870976792148737551
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_66
+  - first:
+      213: 3662052066962544786
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_67
+  - first:
+      213: 7046500098407813974
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_68
+  - first:
+      213: -1719065823635805671
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_69
+  - first:
+      213: -7020898999022339556
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_70
+  - first:
+      213: -4678600503487514682
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_71
+  - first:
+      213: 3965757992331872138
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_72
+  - first:
+      213: -7554048920951547982
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_73
+  - first:
+      213: 2254700423527556645
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_74
+  - first:
+      213: -7969937181213368902
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_75
+  - first:
+      213: -4239188840029534044
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_76
+  - first:
+      213: 5995825517424704358
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_77
+  - first:
+      213: -8556923906047586959
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_78
+  - first:
+      213: 462035052861246682
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_79
+  - first:
+      213: 6279395579677557
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_80
+  - first:
+      213: -8032177929899493018
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_81
+  - first:
+      213: -1287621248204827696
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_82
+  - first:
+      213: -4387910580596047138
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_83
+  - first:
+      213: -2686775443089150544
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_84
+  - first:
+      213: -5865717909701306936
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_85
+  - first:
+      213: -7398494156366409757
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_86
+  - first:
+      213: -464791882551214117
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_87
+  - first:
+      213: 2130954060789647750
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_88
+  - first:
+      213: 3755132371550872225
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_89
+  - first:
+      213: 545432320044847378
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_90
+  - first:
+      213: 4881502677535848901
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_91
+  - first:
+      213: -468754509361633578
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_92
+  - first:
+      213: 441760915512837145
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_93
+  - first:
+      213: -2773580286902459946
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_94
+  - first:
+      213: 2721208841678555547
+    second: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_95
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb3431d0a4dd4fe0848639f2034efac
+      internalID: -8851482762371426959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc75b2d491cb4cff8a0229351321842
+      internalID: 4086069042910221830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2899da1ea09454ad3b87cdaefd5f7357
+      internalID: -9070795596339596987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970b48b0f96b84931b466478ef82faf0
+      internalID: -1626968819193168073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc601cbacc059424d88b43a07eb1b62b
+      internalID: 9104861847029574410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315b46cb3c2974828895c0595bed0749
+      internalID: 3407352586542459183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638a3b7e9975a4979930c66f32ebd72e
+      internalID: 5513495355483996659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f7bcd794922421f97807380d4ac3c8
+      internalID: -5220658618211255186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17adfe12f76db481c8e024a903e1f816
+      internalID: -5387111013724214702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f048fdf353a54717837ddd87f20b2c0
+      internalID: 6364331647804260464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19aaed6ff78f045cf946a1add9deb122
+      internalID: 1558195439677949092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a647bfd0310427fb2f875448eefda9
+      internalID: 3968049130483176550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4d38902d5a847fba3946e5dbaa5c86
+      internalID: 2516354424014436381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d647193dfbe61493688a8866236c0a94
+      internalID: 8743123688266444407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1ff20a7196f4f9ba77e45e4ffe7ec4
+      internalID: -206284676829115153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ba39d47df074b67aee110d1e0a768a
+      internalID: 6823704795362838511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b67597d6cfc440caedc03498bbb31d
+      internalID: -7600549692636316689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b131e092d7bb425ca6b15d1e513f23a
+      internalID: -2339944745331416822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0988f6e4b6cc64056b272e813be603cc
+      internalID: -7777522691192730661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4373385ceeaa74877a5ceec2488ac31b
+      internalID: 6699973681518218918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9332f84994ea444df8f5db75c4418a6b
+      internalID: 3761149047767696252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e85741b06ca14db4bfd10a645defd87
+      internalID: -3168677315715339853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888601a3b13934bc4aa01b40adcdadad
+      internalID: -7874749191475751113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c1ce37cd57f4e598d9cfcb6d69b016
+      internalID: -6647833995207833184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be59ac866cbc34e7c8ba329f1934c956
+      internalID: -5155526177412265842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6ff257159154595967a23f7a010bed
+      internalID: -1191045156083833276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce6c71660ca54294bfb1fa65461132c
+      internalID: 4836597440111357655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4c5029a71c049c9a251a87b091b223
+      internalID: -5090812635772931508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4373f79f3802423cbb10342a1fe1cd0
+      internalID: 7269551278067123220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb85566755064b07b1fcd9248dc55c5
+      internalID: 4558463507108236818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee89cddf406d485d83889b94a18fd0b
+      internalID: 7695410330240454249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1c4c5ccf4464e3ab49210b3240f5c3
+      internalID: 6411634766295143134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdb649339b974cdfa7b31f9724c0b63
+      internalID: 6313088152671213475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259b8a2f561f54060b9cba99e4c224f4
+      internalID: -7046663064687988333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b784f557e07294c59b6b0920895e7262
+      internalID: -8894117930567497226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c14bf9d37e84a1588213506ec550b8
+      internalID: 5470137129011520297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cd77706a9334818a1ad03482296ce0
+      internalID: -6385064464227304809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de80e1b4410ac4cf9b697d52e6700882
+      internalID: 897312044037219740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6a917733f6e43c7a5002d5fbe46860
+      internalID: 8247442470566036330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0715f52de6b7a41529f68070615e6f0c
+      internalID: -7432758063865731638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3847861435b44929a31b2173b84876a
+      internalID: 686447929631992826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bc0a3077c8c4971841df98567d0582
+      internalID: 3230010150492022874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c90904267d84abf8c3d69196145370
+      internalID: 1175222615359495187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593a260978c0a4353a7b8f334166ba7c
+      internalID: -2729672879087605140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a796670617bc4f58bc9463c1a0fcb10
+      internalID: -1709862671170444379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c819a313ad1486fbd21ed7cd6af6de
+      internalID: 4923909054456642029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_46
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bdfe9b8dd1845748cd49a3b968e0cc
+      internalID: 65002658141349721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_47
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5642345a0a08149079ccc1400465e057
+      internalID: 492628247096339053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aeff30a433934c82b3b677873e8f864
+      internalID: 7822561969006900877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a7b9505b85c47e19396a407a05e79f
+      internalID: 6106025814015781722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eec19f2d80ca4451b67d3790438bdf4
+      internalID: 1912240662559391515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577d39f7f8a4d47e4aaba7d67aaa310a
+      internalID: 9031026174496776090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedfcd076d9c042f7aabf22ed34b1810
+      internalID: 1848924106064250531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75138e4764ae54be79f914ee98ecd2c6
+      internalID: -1716532603065262442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7005e89ee03904227bc0dfc26013a4ce
+      internalID: -1888349364763178974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332275bdb9c7844f4a36e9634eac3fd3
+      internalID: -288963641743583074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5620aef15e0144da989ae84b60e2aac6
+      internalID: 8747293972377670079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeecfea84a3c14ad49f8844e5a55a379
+      internalID: -8577514579036213511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d78407db73e4012989387caee1ed32
+      internalID: 4351047036005974846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_59
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2d1f12e47894e029b87a753d901da6
+      internalID: 6751652478129072954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c06c829a7be14ce582b632ae3cf8dcb
+      internalID: 8681579222232571730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a0a291e16a046068f5b5a20786ff31
+      internalID: -1705005284643695987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec148aac13804cafb2f9e873a0c3f32
+      internalID: -2933841476572876829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95f96776673547fca666cbb0cdf8c9a
+      internalID: 2272147333016344692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a5935f472464a1cb5f9baa4e04014b
+      internalID: 4573802749507906292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1172fcec7656f46d2a278d049f8ccf36
+      internalID: -4500916566168526517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7efd83af00040edb2d6bfc6484275d
+      internalID: 5870976792148737551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814cabd3c504d4c279a9a7f8ecf21f00
+      internalID: 3662052066962544786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f1297ae76fd4a5e89d8a154c0b70ad
+      internalID: 7046500098407813974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9965c1f6c964751a92e0d19f81862c
+      internalID: -1719065823635805671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_70
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5042951c0a1f4034817a825d47668c4
+      internalID: -7020898999022339556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_71
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e19d201a46a43b7aaa3e3df920f070
+      internalID: -4678600503487514682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ff40710a6614c4bb1842699a979843
+      internalID: 3965757992331872138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_73
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910e278eb5b3f4d0099255c1cf3f411f
+      internalID: -7554048920951547982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_74
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6257292c95b954d1cb658f567a0b0c59
+      internalID: 2254700423527556645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_75
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b19ef0b8c75479991f9d6536950734
+      internalID: -7969937181213368902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885da6e8a199047a494feef933d2a51b
+      internalID: -4239188840029534044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_77
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd4ffe604fd14e6086fbdde6769efe5
+      internalID: 5995825517424704358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_78
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c2b9223a9d04091bc798924ff1c509
+      internalID: -8556923906047586959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_79
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c52a8428bdc449dcaaaa5530fec8cb5
+      internalID: 462035052861246682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_80
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5438b604b122f4914b4d70deedb8add7
+      internalID: 6279395579677557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_81
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534ac68e575b7401ea445486af6eff5b
+      internalID: -8032177929899493018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_82
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14fedf20323a4753abbab6353beb49e
+      internalID: -1287621248204827696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_83
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42be5789b51d24a81a168b89a716a56a
+      internalID: -4387910580596047138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d481c37eaa334e44b66616876c7ccf7
+      internalID: -2686775443089150544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_85
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061d49dafbede497db6ea270679d02e7
+      internalID: -5865717909701306936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_86
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87febcee7c33d46fcb01392b275bfd81
+      internalID: -7398494156366409757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190d3f59264b248f3835a80a49ae02b0
+      internalID: -464791882551214117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7873096aaf3c64a0d92fb4e02acfeabb
+      internalID: 2130954060789647750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_89
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0d7fb3a0a864a609c58ae2486d3b5d
+      internalID: 3755132371550872225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_90
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c32243ec7bc49dca21b9d57522c6a0
+      internalID: 545432320044847378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_91
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4682d73e081844146a71264ad763237d
+      internalID: 4881502677535848901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5824bacd33e544edea87fa01a59c195f
+      internalID: -468754509361633578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_93
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83892b8e70b0345b08ccc8e8c58d75a2
+      internalID: 441760915512837145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05284f1a0ea0f420b9b4fce493166e6c
+      internalID: -2773580286902459946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: north_italy___veneziano_and_ancient_rome_sprites_by_95jezzica_dbr5gnt_95
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e802da1a34c3e4f5faa20cd09a32b7ec
+      internalID: 2721208841678555547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e0df415811e624076b453f6946758763
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
