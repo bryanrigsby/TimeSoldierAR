@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameMenu : MonoBehaviour
 {
 
-    public GameObject mainMenuCanvas, arCanvas, loadingCanvas, uiCanvas, statsPanel, itemPanel, itemDescriptionPanel, errorPanel;
+    public GameObject arCanvas, uiCanvas, statsPanel, itemPanel, itemDescriptionPanel, errorPanel;
     private PlayerStats playerStats;
     public Text hpSliderText, mpSliderText, expSliderText, levelText, strengthText, defenseText, eqpdWpnText, wpnPwrText, eqpdAmrText, amrPwrText, itemDescriptionName, itemDescriptionDescription, itemDescriptionEffectLabelText, itemDescriptionSellAmtLabelText, itemDescriptionEffectValueText, itemDescriptionSellAmtValueText, useButtonText, goldText, errorPanelText;
     public Slider hpSlider, mpSlider, expSlider;
@@ -89,8 +89,6 @@ public class GameMenu : MonoBehaviour
     {
 
         AudioManager.instance.PlayBGM(2);
-        mainMenuCanvas.SetActive(false);
-        loadingCanvas.SetActive(false);
         arCanvas.SetActive(false);
         uiCanvas.SetActive(true);
         statsPanel.SetActive(true);
@@ -101,8 +99,6 @@ public class GameMenu : MonoBehaviour
         AudioManager.instance.ButtonSFX();
         AudioManager.instance.StopMusic();
         AudioManager.instance.PlayBGM(7);
-        mainMenuCanvas.SetActive(false);
-        loadingCanvas.SetActive(false);
         arCanvas.SetActive(true);
         uiCanvas.SetActive(false);
         statsPanel.SetActive(false);

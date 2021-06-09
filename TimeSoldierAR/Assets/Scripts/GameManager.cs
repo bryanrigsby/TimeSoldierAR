@@ -8,15 +8,12 @@ public class GameManager : MonoBehaviour
 {
 
 
-    public GameObject continueButton, mainMenuCanvas, loadingCanvas, arCanvas, uiCanvas, arCanvasTextGO;
+    public GameObject arCanvas, uiCanvas, arCanvasTextGO;
 
-    public float timer = 3f;
     public float arTextTimer = 1f;
-    private bool timerBool;
     private bool arTextTimerBool;
 
     public Text arCanvasText;
-
 
     public PlayerStats playerStats;
 
@@ -35,42 +32,15 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
 
-        mainMenuCanvas.SetActive(true);
-        loadingCanvas.SetActive(false);
         arCanvas.SetActive(false);
         uiCanvas.SetActive(false);
-        timerBool = false;
         arTextTimerBool = false;
-
-        if (PlayerPrefs.HasKey("Current_Scene"))
-        {
-            continueButton.SetActive(true);
-        }
-        else
-        {
-            continueButton.SetActive(false);
-        }
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timerBool)
-        {
-            timer -= Time.deltaTime;
-            //Debug.Log(timer);
-            if (timer <= 0)
-            {
-                mainMenuCanvas.SetActive(false);
-                loadingCanvas.SetActive(false);
-                arCanvas.SetActive(true);
-                uiCanvas.SetActive(false);
-                AudioManager.instance.StopMusic();
-                AudioManager.instance.PlayBGM(4);
-                timerBool = false;
-            }
-        }
 
         if (arTextTimerBool)
         {
@@ -86,29 +56,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
- 
-    public void Continue()
-    {
-        Debug.Log("continue clicked clicked");
-        AudioManager.instance.ButtonSFX();
-        LoadData();
-        mainMenuCanvas.SetActive(false);
-        loadingCanvas.SetActive(true);
-        arCanvas.SetActive(false);
-        uiCanvas.SetActive(false);
-        timerBool = true;
-    }
-
-    public void NewGame()
-    {
-        Debug.Log("new game clicked");
-        AudioManager.instance.ButtonSFX();
-        mainMenuCanvas.SetActive(false);
-        loadingCanvas.SetActive(true);
-        arCanvas.SetActive(false);
-        uiCanvas.SetActive(false);
-        timerBool = true;
-    }
 
 
     public void SaveGame()

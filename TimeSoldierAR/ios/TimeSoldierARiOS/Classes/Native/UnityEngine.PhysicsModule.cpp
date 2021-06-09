@@ -872,6 +872,24 @@ struct ControllerColliderHit_tB009AA7F769B4A3E988DEF71F4C5A29AB6A38968_marshaled
 	int32_t ___m_Push_6;
 };
 
+// UnityEngine.ForceMode
+struct  ForceMode_t76188FF14D0038E184106555207A81218E97D0A5 
+{
+public:
+	// System.Int32 UnityEngine.ForceMode::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ForceMode_t76188FF14D0038E184106555207A81218E97D0A5, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // UnityEngine.Object
 struct  Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0  : public RuntimeObject
 {
@@ -1310,6 +1328,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * Collider_get_attachedRigidbody_m9E3C688EAE2F6A76C9AC14968D96769D9A71B1E8 (Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Component::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Component__ctor_m5E2740C0ACA4B368BC460315FAA2EDBFEAC0B8EF (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Rigidbody::AddForce_Injected(UnityEngine.Vector3&,UnityEngine.ForceMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_Injected_mEB8DB621D03BE740C5CBD472E873FF8B6EF6C119 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___force0, int32_t ___mode1, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1495,6 +1515,14 @@ IL2CPP_EXTERN_C void ControllerColliderHit_tB009AA7F769B4A3E988DEF71F4C5A29AB6A3
 IL2CPP_EXTERN_C void ControllerColliderHit_tB009AA7F769B4A3E988DEF71F4C5A29AB6A38968_marshal_com_cleanup(ControllerColliderHit_tB009AA7F769B4A3E988DEF71F4C5A29AB6A38968_marshaled_com& marshaled)
 {
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -2935,6 +2963,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody__ctor_m7E9FF7B44B8A3B05217339C
 		Component__ctor_m5E2740C0ACA4B368BC460315FAA2EDBFEAC0B8EF(__this, /*hidden argument*/NULL);
 		return;
 	}
+}
+// System.Void UnityEngine.Rigidbody::AddForce(UnityEngine.Vector3,UnityEngine.ForceMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_mD64ACF772614FE36CFD8A477A07A407B35DF1A54 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___force0, int32_t ___mode1, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___mode1;
+		Rigidbody_AddForce_Injected_mEB8DB621D03BE740C5CBD472E873FF8B6EF6C119(__this, (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&___force0), L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Rigidbody::AddForce_Injected(UnityEngine.Vector3&,UnityEngine.ForceMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_Injected_mEB8DB621D03BE740C5CBD472E873FF8B6EF6C119 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___force0, int32_t ___mode1, const RuntimeMethod* method)
+{
+	typedef void (*Rigidbody_AddForce_Injected_mEB8DB621D03BE740C5CBD472E873FF8B6EF6C119_ftn) (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 *, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *, int32_t);
+	static Rigidbody_AddForce_Injected_mEB8DB621D03BE740C5CBD472E873FF8B6EF6C119_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody_AddForce_Injected_mEB8DB621D03BE740C5CBD472E873FF8B6EF6C119_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::AddForce_Injected(UnityEngine.Vector3&,UnityEngine.ForceMode)");
+	_il2cpp_icall_func(__this, ___force0, ___mode1);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

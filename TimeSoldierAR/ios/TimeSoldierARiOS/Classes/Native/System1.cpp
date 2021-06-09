@@ -19470,6 +19470,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultValueAttribute__ctor_m7572A53E3D0
 		return;
 	}
 }
+// System.Void System.ComponentModel.DefaultValueAttribute::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultValueAttribute__ctor_m1BC9CBB38A9314A5513B910C942861DA122A852A (DefaultValueAttribute_t03B1F51B35271D50779D31234C9C6845BC9626EC * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m45CAD4B01265CC84CC5A84F62EE2DBE85DE89EC0(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___value0;
+		__this->set_value_0(L_0);
+		return;
+	}
+}
 // System.Void System.ComponentModel.DefaultValueAttribute::.ctor(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultValueAttribute__ctor_m2B67802B0DD6D056BB6BDDFEA71D5350F45E9AEE (DefaultValueAttribute_t03B1F51B35271D50779D31234C9C6845BC9626EC * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
 {

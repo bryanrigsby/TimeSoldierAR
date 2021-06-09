@@ -110,6 +110,8 @@ struct NotNullAttribute_t04A526B0B7DD6B37D2FFC6E5079575E0C461E2A0;
 struct StaticAccessorAttribute_tE507394A59220DFDF5DBE62DD94B6A00AA01D1F2;
 // UnityEngine.Bindings.ThreadSafeAttribute
 struct ThreadSafeAttribute_t3FB9EE5993C748628BC06D9D46ACA3A58FDAE317;
+// UnityEngine.Bindings.UnmarshalledAttribute
+struct UnmarshalledAttribute_tAAB7B6FBEEA7672AE8DB6EC9676CA8911A422B3A;
 // UnityEngine.Bindings.VisibleToOtherModulesAttribute
 struct VisibleToOtherModulesAttribute_t8601A3A00D7B9528C62DD278E53B317B566FDA90;
 // UnityEngine.NativeClassAttribute
@@ -1059,6 +1061,15 @@ public:
 
 // UnityEngine.Bindings.NotNullAttribute
 struct  NotNullAttribute_t04A526B0B7DD6B37D2FFC6E5079575E0C461E2A0  : public Attribute_tF048C13FB3C8CFCC53F82290E4A3F621089F9A74
+{
+public:
+
+public:
+};
+
+
+// UnityEngine.Bindings.UnmarshalledAttribute
+struct  UnmarshalledAttribute_tAAB7B6FBEEA7672AE8DB6EC9676CA8911A422B3A  : public Attribute_tF048C13FB3C8CFCC53F82290E4A3F621089F9A74
 {
 public:
 
@@ -2858,6 +2869,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThreadSafeAttribute__ctor_mC3058002BD52E
 	{
 		NativeMethodAttribute__ctor_mE26CCBB6FA1CF524CDF21471D4D513E7DE1C5B43(__this, /*hidden argument*/NULL);
 		NativeMethodAttribute_set_IsThreadSafe_m11B322FBC460DD97E27F24B6686F5D8C4077F7E6_inline(__this, (bool)1, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Bindings.UnmarshalledAttribute::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmarshalledAttribute__ctor_m7E224B875755FD7109EDFB2CBA2A2F7F617A1191 (UnmarshalledAttribute_tAAB7B6FBEEA7672AE8DB6EC9676CA8911A422B3A * __this, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m45CAD4B01265CC84CC5A84F62EE2DBE85DE89EC0(__this, /*hidden argument*/NULL);
 		return;
 	}
 }

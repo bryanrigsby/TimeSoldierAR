@@ -41103,6 +41103,16 @@ IL_0159:
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_73, NULL, String_LastIndexOf_m074A70E0C63246B664CC26F4D0B5203424B2BCF7_RuntimeMethod_var);
 	}
 }
+// System.String System.String::PadLeft(System.Int32,System.Char)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_PadLeft_m3C4E771CF30A3F43E756D47D7896A19E66C948BF (String_t* __this, int32_t ___totalWidth0, Il2CppChar ___paddingChar1, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___totalWidth0;
+		Il2CppChar L_1 = ___paddingChar1;
+		String_t* L_2 = String_PadHelper_m305F79FF4A52536857473BE831FF880AE58F9F85(__this, L_0, L_1, (bool)0, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // System.String System.String::PadRight(System.Int32,System.Char)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_PadRight_mDC890E71A75C12F96DC1430CF94B1B7C1ED839B0 (String_t* __this, int32_t ___totalWidth0, Il2CppChar ___paddingChar1, const RuntimeMethod* method)
 {

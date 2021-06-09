@@ -31961,6 +31961,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Log_mD51F54D254E1380E2317F19403E6
 {
 	return log(___d0);
 }
+// System.Double System.Math::Log10(System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Log10_m156ACF7B880E21006A889AA71CB2FD916658A4B0 (double ___d0)
+{
+	return log10(___d0);
+}
 // System.Double System.Math::Exp(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Exp_m278C8D07D8F3A6DEAA2632DB90C24FF758BCC661 (double ___d0)
 {
@@ -32058,6 +32063,50 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Max_mA99E48BB021F2E4B62D4EA9F52E
 IL_0006:
 	{
 		int32_t L_3 = ___val10;
+		return L_3;
+	}
+}
+// System.UInt32 System.Math::Max(System.UInt32,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Math_Max_m2CC37D12571BFADB2BF042702B0DA1A6537E2F83 (uint32_t ___val10, uint32_t ___val21, const RuntimeMethod* method)
+{
+	{
+		uint32_t L_0 = ___val10;
+		uint32_t L_1 = ___val21;
+		if ((!(((uint32_t)L_0) < ((uint32_t)L_1))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		uint32_t L_2 = ___val21;
+		return L_2;
+	}
+
+IL_0006:
+	{
+		uint32_t L_3 = ___val10;
+		return L_3;
+	}
+}
+// System.Int64 System.Math::Max(System.Int64,System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Math_Max_m13FD4D7B921C359B34176CDF2A51FB2F96965E45 (int64_t ___val10, int64_t ___val21, const RuntimeMethod* method)
+{
+	{
+		int64_t L_0 = ___val10;
+		int64_t L_1 = ___val21;
+		if ((((int64_t)L_0) >= ((int64_t)L_1)))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		int64_t L_2 = ___val21;
+		return L_2;
+	}
+
+IL_0006:
+	{
+		int64_t L_3 = ___val10;
 		return L_3;
 	}
 }
@@ -32159,6 +32208,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Min_mC950438198519FB2B0260FCB912
 IL_0006:
 	{
 		int32_t L_3 = ___val10;
+		return L_3;
+	}
+}
+// System.Int64 System.Math::Min(System.Int64,System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Math_Min_mA2FECF96DCE00528FBA2A3835BEB4B9B1E97CDD3 (int64_t ___val10, int64_t ___val21, const RuntimeMethod* method)
+{
+	{
+		int64_t L_0 = ___val10;
+		int64_t L_1 = ___val21;
+		if ((((int64_t)L_0) <= ((int64_t)L_1)))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		int64_t L_2 = ___val21;
+		return L_2;
+	}
+
+IL_0006:
+	{
+		int64_t L_3 = ___val10;
 		return L_3;
 	}
 }
