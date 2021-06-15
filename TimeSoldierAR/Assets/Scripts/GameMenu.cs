@@ -19,8 +19,9 @@ public class GameMenu : MonoBehaviour
 
     public static GameMenu instance;
 
-    private float timer = 1.0f;
-    public bool timerBool;
+    private float errorPanelTimer = 1.0f;
+    public bool errorPanelTimerBool;
+
 
 
 
@@ -29,7 +30,8 @@ public class GameMenu : MonoBehaviour
     {
         instance = this;
         UpdateMainStats();
-        timerBool = false;
+        errorPanelTimerBool = false;
+
     }
 
     // Update is called once per frame
@@ -40,18 +42,20 @@ public class GameMenu : MonoBehaviour
             UpdateMainStats();
         }
 
-        if (timerBool)
+        if (errorPanelTimerBool)
         {
-            timer -= Time.deltaTime;
-            //Debug.Log(timer);
-            if (timer <= 0)
+            errorPanelTimer -= Time.deltaTime;
+            //Debug.Log(errorPanelTimer);
+            if (errorPanelTimer <= 0)
             {
                 errorPanelText.text = "";
                 errorPanel.SetActive(false);
-                timerBool = false;
-                timer = 1f;
+                errorPanelTimerBool = false;
+                errorPanelTimer = 1f;
             }
         }
+
+
     }
 
     public void UpdateMainStats()

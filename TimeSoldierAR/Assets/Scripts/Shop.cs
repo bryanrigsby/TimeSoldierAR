@@ -268,7 +268,7 @@ public class Shop : MonoBehaviour
             }
             else
             {
-                GameMenu.instance.timerBool = true;
+                GameMenu.instance.errorPanelTimerBool = true;
                 GameMenu.instance.errorPanelText.text = "You do not have enough gold!";
                 GameMenu.instance.errorPanel.SetActive(true);
                 AudioManager.instance.PlaySFX(15);

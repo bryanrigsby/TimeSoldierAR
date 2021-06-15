@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
 
 
-    public GameObject arCanvas, uiCanvas, arCanvasTextGO;
+    public GameObject arCanvas, uiCanvas, arCanvasTextGO, loadingPanel;
 
     public float arTextTimer = 1f;
     private bool arTextTimerBool;
@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     public int currentGold;
     //public float timeBetweenBattles = 10f;
     //public float betweenBattleCounter;
+    public float loadingPanelTimer = 3.0f;
+    private bool loadingPanelTimerBool;
 
     public static GameManager instance;
 
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour
         arCanvas.SetActive(false);
         uiCanvas.SetActive(false);
         arTextTimerBool = false;
+        loadingPanelTimerBool = true;
 
     }
 
@@ -52,6 +55,19 @@ public class GameManager : MonoBehaviour
                 arCanvasTextGO.SetActive(false);
                 arTextTimerBool = false;
                 arTextTimer = 1f;
+            }
+        }
+
+        if (loadingPanelTimerBool)
+        {
+            loadingPanelTimer -= Time.deltaTime;
+            Debug.Log(loadingPanelTimer);
+            if (loadingPanelTimer <= 0)
+            {
+                loadingPanel.SetActive(false);
+                arCanvas.SetActive(true);
+                loadingPanelTimerBool = false;
+                loadingPanelTimer = 3f;
             }
         }
     }

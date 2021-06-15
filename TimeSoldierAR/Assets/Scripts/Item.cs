@@ -25,7 +25,7 @@ public class Item : MonoBehaviour
             {
                 if(playerStats.currentHp >= playerStats.maxHp)
                 {
-                    GameMenu.instance.timerBool = true;
+                    GameMenu.instance.errorPanelTimerBool = true;
                     GameMenu.instance.errorPanelText.text = "You have full HP!";
                     GameMenu.instance.errorPanel.SetActive(true);
                     AudioManager.instance.PlaySFX(15);
@@ -51,7 +51,7 @@ public class Item : MonoBehaviour
             {
                 if (playerStats.currentMp >= playerStats.maxMp)
                 {
-                    GameMenu.instance.timerBool = true;
+                    GameMenu.instance.errorPanelTimerBool = true;
                     GameMenu.instance.errorPanelText.text = "You have full MP!";
                     GameMenu.instance.errorPanel.SetActive(true);
                     AudioManager.instance.PlaySFX(15);
@@ -103,7 +103,7 @@ public class Item : MonoBehaviour
             }
             else
             {
-                GameMenu.instance.timerBool = true;
+                GameMenu.instance.errorPanelTimerBool = true;
                 GameMenu.instance.errorPanelText.text = "You are already equipped with that!";
                 GameMenu.instance.errorPanel.SetActive(true);
                 AudioManager.instance.PlaySFX(15);
@@ -126,7 +126,7 @@ public class Item : MonoBehaviour
             }
             else
             {
-                GameMenu.instance.timerBool = true;
+                GameMenu.instance.errorPanelTimerBool = true;
                 GameMenu.instance.errorPanelText.text = "You are already equipped with that!";
                 GameMenu.instance.errorPanel.SetActive(true);
                 AudioManager.instance.PlaySFX(15);

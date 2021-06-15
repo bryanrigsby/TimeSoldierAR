@@ -5,6 +5,8 @@ using UnityEngine;
 public class DidCollide : MonoBehaviour
 {
 
+
+
     public GameObject uiCanvas;
 
     private void OnTriggerEnter(Collider other)
