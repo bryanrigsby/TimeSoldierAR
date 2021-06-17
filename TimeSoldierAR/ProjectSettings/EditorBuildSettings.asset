@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ChOneTimeWarpHouseCutScene.unity
     guid: ff112fe2d9c9b4d1f98a5ac351e98df2
   - enabled: 1
-    path: Assets/Scenes/ExplanationScene.unity
-    guid: 1c21659107d954ab8b7324a8281531a4
-  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: dedb4d1d8b2114079a6e6c79bb0ed5c4
   m_configObjects: {}

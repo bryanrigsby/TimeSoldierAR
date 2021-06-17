@@ -47,6 +47,7 @@ public class TitleSceneManager : MonoBehaviour
                 AudioManager.instance.StopMusic();
                 if (PlayerPrefs.HasKey("Current_Scene"))
                 {
+                    GameManager.instance.continueGame = true;
                     AudioManager.instance.PlayBGM(4);
                     SceneManager.LoadScene("MainScene");
                 }

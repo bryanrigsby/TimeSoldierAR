@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
 
 
-    public GameObject arCanvas, uiCanvas, arCanvasTextGO, loadingPanel;
+    public GameObject arCanvas, uiCanvas, orientationPanel, arCanvasTextGO, loadingPanel;
 
     public float arTextTimer = 1f;
     private bool arTextTimerBool;
@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public float loadingPanelTimer = 3.0f;
     private bool loadingPanelTimerBool;
 
+    public bool continueGame = false; 
     public static GameManager instance;
 
     // Start is called before the first frame update
@@ -34,8 +35,19 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
 
-        arCanvas.SetActive(false);
-        uiCanvas.SetActive(false);
+        if(continueGame == true)
+        {
+            arCanvas.SetActive(true);
+            uiCanvas.SetActive(false);
+        }
+        else
+        {
+            arCanvas.SetActive(false);
+            uiCanvas.SetActive(true);
+            orientationPanel.SetActive(true);
+        }
+
+
         arTextTimerBool = false;
         loadingPanelTimerBool = true;
 
@@ -65,7 +77,6 @@ public class GameManager : MonoBehaviour
             if (loadingPanelTimer <= 0)
             {
                 loadingPanel.SetActive(false);
-                arCanvas.SetActive(true);
                 loadingPanelTimerBool = false;
                 loadingPanelTimer = 3f;
             }

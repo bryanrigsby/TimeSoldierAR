@@ -7,9 +7,9 @@ public class DialogManager : MonoBehaviour
 {
 
     public Text dialogText;
-    public Text nameText;
     public GameObject dialogBox;
-    public GameObject nameBox;
+    public GameObject exitButton;
+    public GameObject nextButton;
 
     public string[] dialogLines;
 
@@ -24,6 +24,11 @@ public class DialogManager : MonoBehaviour
         instance = this;
         dialogText.text = dialogLines[currentLine];
 
+        exitButton.SetActive(false);
+        nextButton.SetActive(true);
+
+        Debug.Log(currentLine);
+
     }
 
     // Update is called once per frame
@@ -36,14 +41,14 @@ public class DialogManager : MonoBehaviour
     {
         if (dialogBox.activeInHierarchy)
         {
-            //Debug.Log("clicked");
+            Debug.Log(currentLine);
             currentLine++;
 
             if(currentLine >= dialogLines.Length-1)
             {
                 dialogText.text = dialogLines[currentLine];
-                GuideManager.instance.exitButton.SetActive(true);
-                GuideManager.instance.nextButton.SetActive(false);
+                exitButton.SetActive(true);
+                nextButton.SetActive(false);
             }
             else
             {

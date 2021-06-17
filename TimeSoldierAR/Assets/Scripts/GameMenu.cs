@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameMenu : MonoBehaviour
 {
 
-    public GameObject arCanvas, uiCanvas, statsPanel, itemPanel, itemDescriptionPanel, errorPanel;
+    public GameObject arCanvas, uiCanvas, statsPanel, itemPanel, itemDescriptionPanel, errorPanel, orientationPanel;
     private PlayerStats playerStats;
     public Text hpSliderText, mpSliderText, expSliderText, levelText, strengthText, defenseText, eqpdWpnText, wpnPwrText, eqpdAmrText, amrPwrText, itemDescriptionName, itemDescriptionDescription, itemDescriptionEffectLabelText, itemDescriptionSellAmtLabelText, itemDescriptionEffectValueText, itemDescriptionSellAmtValueText, useButtonText, goldText, errorPanelText;
     public Slider hpSlider, mpSlider, expSlider;
@@ -19,7 +19,7 @@ public class GameMenu : MonoBehaviour
 
     public static GameMenu instance;
 
-    private float errorPanelTimer = 1.0f;
+    public float errorPanelTimer = 1.0f;
     public bool errorPanelTimerBool;
 
 

@@ -8,8 +8,7 @@ public class GuideManager : MonoBehaviour
     public GameObject mainCanvas, guidePanel;
 
     
-    public GameObject exitButton;
-    public GameObject nextButton;
+
 
     public static GuideManager instance;
 
@@ -32,12 +31,6 @@ public class GuideManager : MonoBehaviour
         AudioManager.instance.PlayBGM(4);
         mainCanvas.SetActive(true);
         guidePanel.SetActive(true);
-
-        exitButton.SetActive(false);
-        nextButton.SetActive(true);
-
-        DialogManager.instance.currentLine = 0;
-        DialogManager.instance.dialogText.text = DialogManager.instance.dialogLines[0];
     }
 
     public void CloseGuide()
@@ -46,6 +39,6 @@ public class GuideManager : MonoBehaviour
         AudioManager.instance.PlayBGM(7);
         mainCanvas.SetActive(false);
         guidePanel.SetActive(false);
-
+        GameManager.instance.arCanvas.SetActive(true);
     }
 }
