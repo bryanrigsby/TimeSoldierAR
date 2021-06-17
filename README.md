@@ -2,7 +2,7 @@
 
 TODO
 
--make loading panel be first...maybe it's ok since it goes to orientation panel
+-have scene be loaded based on click (create function)
 -add world map (monsters, POI)??
 -figure out story
 -add dialog 
