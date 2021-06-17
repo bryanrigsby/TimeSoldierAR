@@ -8,6 +8,9 @@ public class TitleSceneManager : MonoBehaviour
 {
     public GameObject continueButton, mainMenuCanvas, loadingCanvas;
 
+        public bool continueGame = false; 
+
+
     public float timer = 3f;
     private bool timerBool;
 
@@ -47,7 +50,7 @@ public class TitleSceneManager : MonoBehaviour
                 AudioManager.instance.StopMusic();
                 if (PlayerPrefs.HasKey("Current_Scene"))
                 {
-                    GameManager.instance.continueGame = true;
+                    continueGame = true;
                     AudioManager.instance.PlayBGM(4);
                     SceneManager.LoadScene("MainScene");
                 }
@@ -66,7 +69,6 @@ public class TitleSceneManager : MonoBehaviour
         Debug.Log("continue clicked clicked");
         AudioManager.instance.ButtonSFX();
         AudioManager.instance.StopMusic();
-        GameManager.instance.LoadData();
         mainMenuCanvas.SetActive(false);
         loadingCanvas.SetActive(true);
         timerBool = true;

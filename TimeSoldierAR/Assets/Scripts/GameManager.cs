@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     public float loadingPanelTimer = 3.0f;
     private bool loadingPanelTimerBool;
 
-    public bool continueGame = false; 
+
     public static GameManager instance;
 
     // Start is called before the first frame update
@@ -35,10 +35,10 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
 
-        if(continueGame == true)
+        if(TitleSceneManager.instance.continueGame == true)
         {
-            arCanvas.SetActive(true);
-            uiCanvas.SetActive(false);
+
+            LoadData();
         }
         else
         {
@@ -77,6 +77,8 @@ public class GameManager : MonoBehaviour
             if (loadingPanelTimer <= 0)
             {
                 loadingPanel.SetActive(false);
+                arCanvas.SetActive(true);
+                uiCanvas.SetActive(false);
                 loadingPanelTimerBool = false;
                 loadingPanelTimer = 3f;
             }

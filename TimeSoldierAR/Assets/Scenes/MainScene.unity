@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0.99999946, b: 0.99999946, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -43127,7 +43127,6 @@ MonoBehaviour:
   - My name is Edgar.       I am your guide.
   - You have stumbled onto a timewarp.  You are now in the year 60000 BC.
   - There are other timewarps like the book you found scattered throughout history...
-  - or I guess it would be future now.
   - Finding these will require bravery, heart, and a little luck.
   - Now a little orientation...
   - Tap Status to access stats and items.
