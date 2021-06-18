@@ -2,7 +2,6 @@
 
 TODO
 
--have scene be loaded based on click (create function)
 -add world map (monsters, POI)??
 -figure out story
 -add dialog 
