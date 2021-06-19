@@ -10,7 +10,8 @@ TODO
 -make rest of weapon and armor
 -consider skills images for magic
 -add weapon to AR
--update player sprite to soldier, consider several soldiers for intro scene
+
+
 
 
 Spell Breakdown (power/mp cost)
