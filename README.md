@@ -6,6 +6,7 @@ TODO
   shaman
   caveman cheif
   cavemen 1-3
+  dinosaurs
   
 
 
