@@ -2,6 +2,13 @@
 
 TODO
 
+-get model and png for...
+  shaman
+  caveman cheif
+  cavemen 1-3
+  
+
+
 -add world map (monsters, POI)??
 -figure out story
 -add dialog 
