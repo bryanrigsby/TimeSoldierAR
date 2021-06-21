@@ -11,12 +11,11 @@ UnityExternCall(bool, UnityiOS103orNewer);
 UnityExternCall(bool, UnityiOS110orNewer);
 UnityExternCall(bool, UnityiOS111orNewer);
 UnityExternCall(bool, UnityiOS112orNewer);
+UnityExternCall(bool, UnityiOS130orNewer);
 
 // CrashReporter.mm
 UnityExternCall(void,     CrashedCheckBelowForHintsWhy);
-UnityExternCall(uint8_t*, UnityGetAppLoadAddress);
-UnityExternCall(const uint8_t*, UnityGetAppLoadCommandAddress);
-UnityExternCall(int,      UnityGetAppLoadCommandCount);
+UnityExternCall(const decltype(_mh_execute_header)*, UnityGetExecuteMachHeader);
 
 // iPhone_Sensors.mm
 UnityExternCall(void,  UnityInitJoysticks);
@@ -42,6 +41,7 @@ UnityExternCall(UIView*,            UnityGetGLView);
 UnityExternCall(UIWindow*,          UnityGetMainWindow);
 UnityExternCall(void,               UnityRequestQuit);
 UnityExternCall(void,               UnityDestroyDisplayLink);
+UnityExternCall(void,               UnityCleanupTrampoline);
 
 // UnityAppController+Rendering.mm
 UnityExternCall(void,             UnityInitMainScreenRenderingCallback);
@@ -62,8 +62,8 @@ UnityExternCall(void,                       DisplayManagerEndFrameRendering);
 UnityExternCall(void,                       UnityPrepareScreenshot);
 
 // Unity/MetalHelper.mm
-UnityExternCall(void,             UnityAddNewMetalAPIImplIfNeeded, MTLDeviceRef);
 UnityExternCall(MTLTextureRef,    AcquireDrawableMTL, UnityDisplaySurfaceMTL*);
+UnityExternCall(int,              UnityCommandQueueMaxCommandBufferCountMTL);
 
 // EAGLContextHelper.mm
 UnityExternCall(void,             UnityMakeCurrentContextEAGL, EAGLContext*);
@@ -129,16 +129,19 @@ UnityExternCall(const char*,      UnitySystemName);
 UnityExternCall(const char*,      UnitySystemVersion);
 UnityExternCall(const char*,      UnityDeviceModel);
 UnityExternCall(int,              UnityDeviceCPUCount);
+UnityExternCall(int,              UnityGetPhysicalMemory);
 UnityExternCall(int,              UnityDeviceGeneration);
 UnityExternCall(int,              ParseDeviceGeneration);
+UnityExternCall(int,              UnityDeviceSupportsUpsideDown);
 UnityExternCall(int,              UnityDeviceSupportedOrientations);
 UnityExternCall(int,              UnityDeviceIsStylusTouchSupported);
 UnityExternCall(int,              UnityDeviceCanShowWideColor);
 UnityExternCall(float,            UnityDeviceDPI);
 UnityExternCall(const char*,      UnitySystemLanguage);
-UnityExternCall(int,             UnityGetLowPowerModeEnabled);
-UnityExternCall(int,             UnityGetWantsSoftwareDimming);
+UnityExternCall(int,              UnityGetLowPowerModeEnabled);
+UnityExternCall(int,              UnityGetWantsSoftwareDimming);
 UnityExternCall(void,             UnitySetWantsSoftwareDimming, int);
+UnityExternCall(int,              UnityGetIosAppOnMac);
 
 // Unity/DisplayManager.mm
 UnityExternCall(EAGLContext*,     UnityGetMainScreenContextGLES);
@@ -161,7 +164,8 @@ UnityExternCall(void,             UnityDisplayManager_DisplaySystemResolution, v
 #endif
 
 // Unity/Filesystem.mm
-UnityExternCall(const char*,      UnityApplicationDir);
+UnityExternCall(const char*,      UnityDataBundleDir);
+UnityExternCall(void,             UnitySetDataBundleDirWithBundleId, const char*);
 UnityExternCall(const char*,      UnityDocumentsDir);
 UnityExternCall(const char*,      UnityLibraryDir);
 UnityExternCall(const char*,      UnityCachesDir);
@@ -250,5 +254,3 @@ UnityExternCall(void,     UnitySetAppleTVRemoteTouchesEnabled, int);
 // misc not in trampoline
 UnityExternCall(bool,     Unity_il2cppNoExceptions);
 UnityExternCall(void,     RegisterStaticallyLinkedModulesGranular);
-
-UnityExternCall(NSArray<NSString*>*, GetLaunchImageNames, UIUserInterfaceIdiom, const OrientationMask&, const CGSize&, ScreenOrientation, float);

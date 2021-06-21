@@ -52,6 +52,7 @@ enum
 
 @protocol MTLDevice
 - (id<MTLCommandQueue>)newCommandQueue;
+- (id<MTLCommandQueue>)newCommandQueueWithMaxCommandBufferCount:(NSUInteger)maxCommandBufferCount;
 - (BOOL)supportsTextureSampleCount:(NSUInteger)sampleCount;
 @end
 

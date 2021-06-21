@@ -26,6 +26,8 @@ const Il2CppCodeGenModule g_System_Diagnostics_StackTraceCodeGenModule =
 	"System.Diagnostics.StackTrace.dll",
 	0,
 	NULL,
+	0,
+	NULL,
 	NULL,
 	0,
 	NULL,

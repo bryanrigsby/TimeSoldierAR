@@ -2,12 +2,13 @@
 
 #import <QuartzCore/CADisplayLink.h>
 
-#include "PluginBase/RenderPluginDelegate.h"
+#include "RenderPluginDelegate.h"
 
 @class UnityView;
 @class UnityViewControllerBase;
 @class DisplayConnection;
 
+__attribute__ ((visibility("default")))
 @interface UnityAppController : NSObject<UIApplicationDelegate>
 {
     UnityView*          _unityView;
@@ -16,7 +17,7 @@
     UIWindow*           _window;
     UIView*             _rootView;
     UIViewController*   _rootController;
-    UIView*             _snapshotView;
+    UIViewController*   _snapshotViewController;
 
     DisplayConnection*  _mainDisplay;
 
@@ -70,12 +71,16 @@
 @end
 
 // accessing app controller
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 extern UnityAppController* _UnityAppController;
-inline UnityAppController* GetAppController()
-{
-    return _UnityAppController;
-}
+extern UnityAppController* GetAppController();
+
+#ifdef __cplusplus
+} // extern "C"
+#endif
 
 // Put this into mm file with your subclass implementation
 // pass subclass name to define

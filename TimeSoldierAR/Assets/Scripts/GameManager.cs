@@ -37,7 +37,6 @@ public class GameManager : MonoBehaviour
 
         if(TitleSceneManager.instance.continueGame == true)
         {
-
             LoadData();
         }
         else
@@ -45,6 +44,7 @@ public class GameManager : MonoBehaviour
             arCanvas.SetActive(false);
             uiCanvas.SetActive(true);
             orientationPanel.SetActive(true);
+            loadingPanel.SetActive(false);
         }
 
 
@@ -70,10 +70,10 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (loadingPanelTimerBool)
+        if (loadingPanelTimerBool && TitleSceneManager.instance.continueGame)
         {
             loadingPanelTimer -= Time.deltaTime;
-            Debug.Log(loadingPanelTimer);
+            //Debug.Log(loadingPanelTimer);
             if (loadingPanelTimer <= 0)
             {
                 loadingPanel.SetActive(false);

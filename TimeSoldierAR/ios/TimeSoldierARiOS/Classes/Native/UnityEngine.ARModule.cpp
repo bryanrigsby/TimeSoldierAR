@@ -36,7 +36,7 @@ IL2CPP_EXTERN_C_END
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t55B3E6D09FAC2049AD5EF2B912FD9022689483E9 
+struct U3CModuleU3E_t55B3E6D09FAC2049AD5EF2B912FD9022689483E9 
 {
 public:
 
@@ -52,7 +52,7 @@ struct Il2CppArrayBounds;
 
 
 // System.ValueType
-struct  ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF  : public RuntimeObject
+struct ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF  : public RuntimeObject
 {
 public:
 
@@ -69,7 +69,7 @@ struct ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_marshaled_com
 };
 
 // UnityEngine.XR.Tango.TangoInputTracking
-struct  TangoInputTracking_tC1F5C5ABC55702D19FE23DB3EC6D5026ADC77600  : public RuntimeObject
+struct TangoInputTracking_tC1F5C5ABC55702D19FE23DB3EC6D5026ADC77600  : public RuntimeObject
 {
 public:
 
@@ -78,7 +78,7 @@ public:
 
 
 // System.Boolean
-struct  Boolean_tB53F6830F670160873277339AA58F15CAED4399C 
+struct Boolean_tB53F6830F670160873277339AA58F15CAED4399C 
 {
 public:
 	// System.Boolean System.Boolean::m_value
@@ -124,7 +124,7 @@ public:
 
 
 // System.Double
-struct  Double_t358B8F23BDC52A5DD700E727E204F9F7CDE12409 
+struct Double_t358B8F23BDC52A5DD700E727E204F9F7CDE12409 
 {
 public:
 	// System.Double System.Double::m_value
@@ -158,7 +158,7 @@ public:
 
 
 // System.Enum
-struct  Enum_t2AF27C02B8653AE29442467390005ABC74D8F521  : public ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF
+struct Enum_t2AF27C02B8653AE29442467390005ABC74D8F521  : public ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF
 {
 public:
 
@@ -192,7 +192,7 @@ struct Enum_t2AF27C02B8653AE29442467390005ABC74D8F521_marshaled_com
 };
 
 // System.Single
-struct  Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1 
+struct Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1 
 {
 public:
 	// System.Single System.Single::m_value
@@ -210,7 +210,7 @@ public:
 
 
 // System.Void
-struct  Void_t22962CB4C05B1D89B55A6E1139F0E87A90987017 
+struct Void_t22962CB4C05B1D89B55A6E1139F0E87A90987017 
 {
 public:
 	union
@@ -226,7 +226,7 @@ public:
 
 
 // UnityEngine.Quaternion
-struct  Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357 
+struct Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357 
 {
 public:
 	// System.Single UnityEngine.Quaternion::x
@@ -290,7 +290,7 @@ public:
 
 
 // UnityEngine.Vector3
-struct  Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 
+struct Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 
 {
 public:
 	// System.Single UnityEngine.Vector3::x
@@ -434,7 +434,7 @@ public:
 
 
 // UnityEngine.XR.Tango.PoseStatus
-struct  PoseStatus_t679095D526AF2819322E3199BC816C544C2942AA 
+struct PoseStatus_t679095D526AF2819322E3199BC816C544C2942AA 
 {
 public:
 	// System.Int32 UnityEngine.XR.Tango.PoseStatus::value__
@@ -452,7 +452,7 @@ public:
 
 
 // UnityEngine.XR.Tango.PoseData
-struct  PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 
+struct PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 
 {
 public:
 	// System.Double UnityEngine.XR.Tango.PoseData::orientation_x
@@ -579,12 +579,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F
 		double L_3 = __this->get_orientation_w_3();
 		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_4;
 		memset((&L_4), 0, sizeof(L_4));
-		Quaternion__ctor_m7502F0C38E04C6DE24C965D1CAF278DDD02B9D61((&L_4), (((float)((float)(float)L_0))), (((float)((float)(float)L_1))), (((float)((float)(float)L_2))), (((float)((float)(float)L_3))), /*hidden argument*/NULL);
+		Quaternion__ctor_m7502F0C38E04C6DE24C965D1CAF278DDD02B9D61((&L_4), (((float)((float)L_0))), (((float)((float)L_1))), (((float)((float)L_2))), (((float)((float)L_3))), /*hidden argument*/NULL);
 		V_0 = L_4;
-		goto IL_0028;
+		goto IL_0025;
 	}
 
-IL_0028:
+IL_0025:
 	{
 		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_5 = V_0;
 		return L_5;
@@ -592,7 +592,8 @@ IL_0028:
 }
 IL2CPP_EXTERN_C  Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  PoseData_get_rotation_m8784EAC91FE13E8909E972A0AD9B9A9B9CAA2981_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
 {
-	PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 * _thisAdjusted = reinterpret_cast<PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 *>(__this + 1);
+	int32_t _offset = 1;
+	PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 * _thisAdjusted = reinterpret_cast<PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 *>(__this + _offset);
 	return PoseData_get_rotation_m8784EAC91FE13E8909E972A0AD9B9A9B9CAA2981(_thisAdjusted, method);
 }
 // UnityEngine.Vector3 UnityEngine.XR.Tango.PoseData::get_position()
@@ -606,12 +607,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E
 		double L_2 = __this->get_translation_z_6();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_3;
 		memset((&L_3), 0, sizeof(L_3));
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_3), (((float)((float)(float)L_0))), (((float)((float)(float)L_1))), (((float)((float)(float)L_2))), /*hidden argument*/NULL);
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_3), (((float)((float)L_0))), (((float)((float)L_1))), (((float)((float)L_2))), /*hidden argument*/NULL);
 		V_0 = L_3;
-		goto IL_0021;
+		goto IL_001e;
 	}
 
-IL_0021:
+IL_001e:
 	{
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_4 = V_0;
 		return L_4;
@@ -619,7 +620,8 @@ IL_0021:
 }
 IL2CPP_EXTERN_C  Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  PoseData_get_position_m356B0853C5A393D0748E95FCBEF3BFDA9AC46D9B_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
 {
-	PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 * _thisAdjusted = reinterpret_cast<PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 *>(__this + 1);
+	int32_t _offset = 1;
+	PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 * _thisAdjusted = reinterpret_cast<PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 *>(__this + _offset);
 	return PoseData_get_position_m356B0853C5A393D0748E95FCBEF3BFDA9AC46D9B(_thisAdjusted, method);
 }
 #ifdef __clang__
@@ -656,10 +658,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TangoInputTracking_TryGetPoseAtTime_m8AA
 		PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 * L_0 = ___pose0;
 		bool L_1 = TangoInputTracking_Internal_TryGetPoseAtTime_m6324D495343239E4BBEDF51EB99B056BC4BB260F((PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 *)L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		goto IL_000d;
+		goto IL_000a;
 	}
 
-IL_000d:
+IL_000a:
 	{
 		bool L_2 = V_0;
 		return L_2;

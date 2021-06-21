@@ -14,34 +14,34 @@ static KeyboardDelegate*    _keyboard = nil;
 static bool                 _shouldHideInput = false;
 static bool                 _shouldHideInputChanged = false;
 static const unsigned       kToolBarHeight = 40;
-static const unsigned       kSystemButtonsSpace = 2 * 60 + 3 * 18; // empirical value, there is no way to know the exact widths of the system bar buttons
+static const unsigned       kSingleLineFontSize = 20;
 
 extern "C" void UnityKeyboard_StatusChanged(int status);
 extern "C" void UnityKeyboard_TextChanged(NSString* text);
+extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
 
 @implementation KeyboardDelegate
 {
     // UI handling
     // in case of single line we use UITextField inside UIToolbar
     // in case of multi-line input we use UITextView with UIToolbar as accessory view
-    // toolbar buttons are kept around to prevent releasing them
     // tvOS does not support multiline input thus only UITextField option is implemented
+    // tvOS does not support UIToolbar so we rely on tvOS default processing
 #if PLATFORM_IOS
     UITextView*     textView;
 
     UIToolbar*      viewToolbar;
-    NSArray*        viewToolbarItems;
+    UIToolbar*      fieldToolbar;
+
+    // toolbar items are kept around to prevent releasing them
+    UIBarButtonItem *multiLineDone, *multiLineCancel;
+    UIBarButtonItem *singleLineDone, *singleLineCancel, *singleLineInputField;
 
     NSLayoutConstraint* widthConstraint;
+    int singleLineSystemButtonsSpace;
 #endif
 
     UITextField*    textField;
-
-    // keep toolbar items for both single- and multi- line edit in NSArray to make sure they are kept around
-#if PLATFORM_IOS
-    UIToolbar*      fieldToolbar;
-    NSArray*        fieldToolbarItems;
-#endif
 
     // inputView is view used for actual input (it will be responder): UITextField [single-line] or UITextView [multi-line]
     // editView is the "root" view for keyboard: UIToolbar [single-line] or UITextView [multi-line]
@@ -62,6 +62,7 @@ extern "C" void UnityKeyboard_TextChanged(NSString* text);
 
     // not pretty but seems like easiest way to keep "we are rotating" status
     BOOL            _rotating;
+    NSRange         _hiddenSelection;
 }
 
 @synthesize area;
@@ -147,10 +148,12 @@ extern "C" void UnityKeyboard_TextChanged(NSString* text);
 - (void)keyboardDidShow:(NSNotification*)notification
 {
     _active = YES;
+    UnityKeyboard_LayoutChanged(textField.textInputMode.primaryLanguage);
 }
 
 - (void)keyboardWillHide:(NSNotification*)notification
 {
+    UnityKeyboard_LayoutChanged(nil);
     [self systemHideKeyboard];
 }
 
@@ -187,31 +190,56 @@ extern "C" void UnityKeyboard_TextChanged(NSString* text);
     return _keyboard;
 }
 
-#if PLATFORM_IOS
-struct CreateToolbarResult
++ (void)Destroy
 {
-    UIToolbar*  toolbar;
-    NSArray*    items;
-};
-- (CreateToolbarResult)createToolbarWithView:(UIView*)view
+    _keyboard = nil;
+}
+
+#if PLATFORM_IOS
+- (UIToolbar*)createToolbarWithItems:(NSArray*)items
 {
     UIToolbar* toolbar = [[UIToolbar alloc] initWithFrame: CGRectMake(0, 840, 320, kToolBarHeight)];
     UnitySetViewTouchProcessing(toolbar, touchesIgnored);
     toolbar.hidden = NO;
-
-    UIBarButtonItem* inputItem  = view ? [[UIBarButtonItem alloc] initWithCustomView: view] : nil;
-    UIBarButtonItem* doneItem   = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone target: self action: @selector(textInputDone:)];
-    UIBarButtonItem* cancelItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemCancel target: self action: @selector(textInputCancel:)];
-
-    NSArray* items = view ? @[inputItem, doneItem, cancelItem] : @[doneItem, cancelItem];
     toolbar.items = items;
+    return toolbar;
+}
 
-    inputItem = nil;
-    doneItem = nil;
-    cancelItem = nil;
+- (void)createToolbars
+{
+    multiLineDone   = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone target: self action: @selector(textInputDone:)];
+    multiLineCancel = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemCancel target: self action: @selector(textInputCancel:)];
+    viewToolbar     = [self createToolbarWithItems: @[multiLineDone, multiLineCancel]];
 
-    CreateToolbarResult ret = {toolbar, items};
-    return ret;
+    singleLineInputField = [[UIBarButtonItem alloc] initWithCustomView: textField];
+    singleLineDone       = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone target: self action: @selector(textInputDone:)];
+    singleLineCancel     = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemCancel target: self action: @selector(textInputCancel:)];
+    fieldToolbar         = [self createToolbarWithItems: @[singleLineInputField, singleLineDone, singleLineCancel]];
+
+    // Gather round boys, let's hear the story of apple ingenious api.
+    // Did you see UIBarButtonItem above? oh the marvel of design
+    // Maybe you thought it will have some connection to UIView or something?
+    //   Yes, internally, in private members, hidden like dirty laundry in a room of a youngster
+    // But, you may ask, why do we care? Oh, easy - sometimes you want to use non-english language
+    // And in these languages, not good enough to be english, done/cancel items can have different sizes
+    // And we insist on having input field size set because, yes, we cannot quite do a layout inside UIToolbar
+    //   [because there are no views we can actually touch, thanks for asking]
+    // Obviously, localizing system strings is also well hidden, and what works now might stop working tomorrow
+    // That's why we keep UIBarButtonSystemItemDone/UIBarButtonSystemItemCancel above
+    //   and try to translate "Done"/"Cancel" in a way that "should" work
+    //   if localization fails we will still have "some" values (coming from english)
+    //   and while this wont work with, say, asian languages - it should not regress the current behaviour
+    UIFont* font = [UIFont systemFontOfSize: kSingleLineFontSize];
+    NSBundle* uikitBundle = [NSBundle bundleForClass: UIApplication.class];
+    NSString* doneStr   = [uikitBundle localizedStringForKey: @"Done" value: nil table: nil];
+    NSString* cancelStr = [uikitBundle localizedStringForKey: @"Cancel" value: nil table: nil];
+
+    // mind you, all of that is highly empirical.
+    // we assume space between items to be 18 [both betwen buttons and on the sides]
+    // we also assume that button width would be more less title width exactly (it should be quite close though)
+    const int doneW   = [doneStr sizeWithAttributes: @{NSFontAttributeName: font}].width;
+    const int cancelW = [cancelStr sizeWithAttributes: @{NSFontAttributeName: font}].width;
+    singleLineSystemButtonsSpace = doneW + cancelW + 3 * 18;
 }
 
 #endif
@@ -232,7 +260,7 @@ struct CreateToolbarResult
         textField = [[UITextField alloc] initWithFrame: CGRectMake(0, 0, 120, 30)];
         textField.delegate = self;
         textField.borderStyle = UITextBorderStyleRoundedRect;
-        textField.font = [UIFont systemFontOfSize: 20.0];
+        textField.font = [UIFont systemFontOfSize: kSingleLineFontSize];
         textField.clearButtonMode = UITextFieldViewModeWhileEditing;
 
 #if PLATFORM_IOS
@@ -241,19 +269,9 @@ struct CreateToolbarResult
 #endif
         [textField addTarget: self action: @selector(textFieldDidChange:) forControlEvents: UIControlEventEditingChanged];
 
-        #define CREATE_TOOLBAR(t, i, v)                                 \
-        do {                                                            \
-            CreateToolbarResult res = [self createToolbarWithView:v];   \
-            t = res.toolbar;                                            \
-            i = res.items;                                              \
-        } while(0)
-
 #if PLATFORM_IOS
-        CREATE_TOOLBAR(viewToolbar, viewToolbarItems, nil);
-        CREATE_TOOLBAR(fieldToolbar, fieldToolbarItems, textField);
+        [self createToolbars];
 #endif
-
-        #undef CREATE_TOOLBAR
 
 #if PLATFORM_IOS
         [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(keyboardWillShow:) name: UIKeyboardWillShowNotification object: nil];
@@ -382,6 +400,12 @@ struct CreateToolbarResult
 
     [editView removeFromSuperview];
     editView.hidden = YES;
+
+    // Keyboard notifications are not supported on tvOS so keyboardWillHide: will never be called which would set _active to false.
+    // To work around that limitation we will update _active from here.
+    #if PLATFORM_TVOS
+    _active = editView.isFirstResponder;
+    #endif
 }
 
 - (void)systemHideKeyboard
@@ -449,7 +473,7 @@ struct CreateToolbarResult
 
         inputView.frame = CGRectMake(inputView.frame.origin.x,
             inputView.frame.origin.y,
-            kbRect.size.width - safeAreaInsetLeft - safeAreaInsetRight - kSystemButtonsSpace,
+            kbRect.size.width - safeAreaInsetLeft - safeAreaInsetRight - self->singleLineSystemButtonsSpace,
             inputView.frame.size.height);
 
         // required to avoid auto-resizing on iOS 11 in case if input text is too long
@@ -470,6 +494,8 @@ struct CreateToolbarResult
 
 - (NSRange)querySelection
 {
+    if (_inputHidden && _hiddenSelection.length > 0)
+        return _hiddenSelection;
     UIView<UITextInput>* textInput;
 
 #if PLATFORM_TVOS
@@ -506,6 +532,8 @@ struct CreateToolbarResult
     UITextRange* textRange = [textInput textRangeFromPosition: caret toPosition: select];
 
     [textInput setSelectedTextRange: textRange];
+    if (_inputHidden)
+        _hiddenSelection = range;
 }
 
 + (void)StartReorientation
@@ -544,6 +572,10 @@ struct CreateToolbarResult
 #else
     textField.text = newText;
 #endif
+
+    // for hidden selection place cursor at the end when text changes
+    _hiddenSelection.location = newText.length;
+    _hiddenSelection.length = 0;
 }
 
 - (void)shouldHideInput:(BOOL)hide
@@ -562,6 +594,7 @@ struct CreateToolbarResult
             case UIKeyboardTypeEmailAddress:            hide = YES; break;
             case UIKeyboardTypeTwitter:                 hide = YES; break;
             case UIKeyboardTypeWebSearch:               hide = YES; break;
+            case UIKeyboardTypeDecimalPad:              hide = NO; break;
             default:                                    hide = NO;  break;
         }
     }
@@ -569,48 +602,47 @@ struct CreateToolbarResult
     _inputHidden = hide;
 }
 
-#if FILTER_EMOJIS_IOS_KEYBOARD
-
 static bool StringContainsEmoji(NSString *string);
 - (BOOL)textField:(UITextField*)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string_
 {
+    BOOL stringContainsEmoji = NO;
+
+#if FILTER_EMOJIS_IOS_KEYBOARD
+    stringContainsEmoji = StringContainsEmoji(string_);
+#endif
+
     if (range.length + range.location > textField.text.length)
         return NO;
 
-    return [self currentText: textField.text shouldChangeInRange: range replacementText: string_] && !StringContainsEmoji(string_);
+    return [self currentText: textField.text shouldChangeInRange: range replacementText: string_] && !stringContainsEmoji;
 }
 
 - (BOOL)textView:(UITextView*)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString*)text_
 {
+    BOOL stringContainsEmoji = NO;
+
+#if FILTER_EMOJIS_IOS_KEYBOARD
+    stringContainsEmoji = StringContainsEmoji(text_);
+#endif
+
     if (range.length + range.location > textView.text.length)
         return NO;
 
-    return [self currentText: textView.text shouldChangeInRange: range replacementText: text_] && !StringContainsEmoji(text_);
+    return [self currentText: textView.text shouldChangeInRange: range replacementText: text_] && !stringContainsEmoji;
 }
-
-#else
-
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string_
-{
-    if (range.length + range.location > textField.text.length)
-        return NO;
-
-    return [self currentText: textField.text shouldChangeInRange: range replacementText: string_];
-}
-
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString*)text_
-{
-    if (range.length + range.location > textView.text.length)
-        return NO;
-
-    return [self currentText: textView.text shouldChangeInRange: range replacementText: text_];
-}
-
-#endif // FILTER_EMOJIS_IOS_KEYBOARD
 
 - (BOOL)currentText:(NSString*)currentText shouldChangeInRange:(NSRange)range  replacementText:(NSString*)text_
 {
     NSUInteger newLength = currentText.length + (text_.length - range.length);
+
+#if !FILTER_EMOJIS_IOS_KEYBOARD
+    // If the user inserts any emoji that exceeds the character limit it should quickly reject it, else it'll crash
+    if (newLength > _characterLimit && _characterLimit != 0 && StringContainsEmoji(text_))
+    {
+        return NO;
+    }
+#endif
+
     if (newLength > _characterLimit && _characterLimit != 0 && newLength >= currentText.length)
     {
         NSString* newReplacementText = @"";
@@ -632,6 +664,25 @@ static bool StringContainsEmoji(NSString *string);
     }
     else
     {
+        if (_inputHidden && _hiddenSelection.length > 0)
+        {
+            NSString* newText = [currentText stringByReplacingCharactersInRange: _hiddenSelection withString: text_];
+#if PLATFORM_IOS
+            if (_multiline)
+                [textView setText: newText];
+            else
+                [textField setText: newText];
+#else
+            [textField setText: newText];
+#endif
+            _hiddenSelection.location = _hiddenSelection.location + text_.length;
+            _hiddenSelection.length = 0;
+            self.selection = _hiddenSelection;
+            return NO;
+        }
+
+        _hiddenSelection.location = range.location + text_.length;
+        _hiddenSelection.length = 0;
         return YES;
     }
 }
@@ -662,7 +713,8 @@ extern "C" void UnityKeyboard_Create(unsigned keyboardType, int autocorrection, 
         UIKeyboardTypeEmailAddress,
         UIKeyboardTypeDefault, // Default is used in case Wii U specific NintendoNetworkAccount type is selected (indexed at 8 in UnityEngine.TouchScreenKeyboardType)
         UIKeyboardTypeTwitter,
-        UIKeyboardTypeWebSearch
+        UIKeyboardTypeWebSearch,
+        UIKeyboardTypeDecimalPad
     };
 
     static const UITextAutocorrectionType autocorrectionTypes[] =
@@ -804,7 +856,6 @@ extern "C" void UnityKeyboard_SetSelection(int location, int length)
 //
 //  Emoji Filtering: unicode magic
 
-#if FILTER_EMOJIS_IOS_KEYBOARD
 static bool StringContainsEmoji(NSString *string)
 {
     __block BOOL returnValue = NO;
@@ -889,5 +940,3 @@ static bool StringContainsEmoji(NSString *string)
 
     return returnValue;
 }
-
-#endif // FILTER_EMOJIS_IOS_KEYBOARD

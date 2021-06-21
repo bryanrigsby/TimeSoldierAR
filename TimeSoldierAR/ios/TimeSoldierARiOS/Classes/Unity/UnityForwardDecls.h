@@ -134,5 +134,6 @@ extern "C" {
     bool UnityiOS110orNewer();
     bool UnityiOS111orNewer();
     bool UnityiOS112orNewer();
+    bool UnityiOS130orNewer();
 }
 #endif

@@ -25,11 +25,11 @@ extern bool _supportsMSAA;
     CGSize systemRenderSize = CGSizeMake(size.width * self.contentScaleFactor, size.height * self.contentScaleFactor);
     _curOrientation = (ScreenOrientation)UnityReportResizeView(systemRenderSize.width, systemRenderSize.height, _curOrientation);
     ReportSafeAreaChangeForView(self);
+}
 
-#if UNITY_CAN_USE_METAL
-    if (UnitySelectedRenderingAPI() == apiMetal)
-        ((CAMetalLayer*)self.layer).drawableSize = systemRenderSize;
-#endif
+- (void)boundsUpdated
+{
+    [self onUpdateSurfaceSize: self.bounds.size];
 }
 
 - (void)initImpl:(CGRect)frame scaleFactor:(CGFloat)scale

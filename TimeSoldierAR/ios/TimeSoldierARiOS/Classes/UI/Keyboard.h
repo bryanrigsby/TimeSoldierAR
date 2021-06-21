@@ -34,6 +34,7 @@ KeyboardShowParam;
 //     keyboard will be created on demand anyway (in Instance method)
 + (void)Initialize;
 + (KeyboardDelegate*)Instance;
++ (void)Destroy;
 
 - (id)init;
 - (void)setKeyboardParams:(KeyboardShowParam)param;

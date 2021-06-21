@@ -1,7 +1,8 @@
+#include <sched.h>
+
 const CFIndex streamSize = 1024;
 static NSOperationQueue* webOperationQueue;
 static NSURLSession* unityWebRequestSession;
-
 
 @interface UnityURLRequest : NSMutableURLRequest
 
@@ -63,8 +64,14 @@ static NSLock* currentRequestsLock;
 
 + (void)removeRequest:(UnityURLRequest*)request
 {
+    // removeObject would remove all identical request, taskIdentifier is unique
     [currentRequestsLock lock];
-    [currentRequests removeObject: request];
+    for (unsigned i = 0; i < currentRequests.count; ++i)
+        if (currentRequests[i].taskIdentifier == request.taskIdentifier)
+        {
+            [currentRequests removeObjectAtIndex: i];
+            break;
+        }
     [currentRequestsLock unlock];
 }
 
@@ -78,9 +85,20 @@ static NSLock* currentRequestsLock;
         const UInt8* data = (const UInt8*)UnityWebRequestGetUploadData(udata, &dataSize);
         if (dataSize == 0)
             break;
-        NSInteger transmitted = [outputStream write: data maxLength: dataSize];
-        if (transmitted > 0)
-            UnityWebRequestConsumeUploadData(udata, (unsigned)transmitted);
+
+        if (outputStream.hasSpaceAvailable)
+        {
+            NSInteger transmitted = [outputStream write: data maxLength: dataSize];
+            if (transmitted > 0)
+                UnityWebRequestConsumeUploadData(udata, (unsigned)transmitted);
+            else if (transmitted < 0)
+                break;
+        }
+        else
+        {
+            sched_yield();
+        }
+
         switch (task.state)
         {
             case NSURLSessionTaskStateCanceling:
@@ -92,6 +110,7 @@ static NSLock* currentRequestsLock;
         }
     }
     [outputStream close];
+    UnityWebRequestRelease(udata);
 }
 
 - (id)init:(void*)udata
@@ -256,6 +275,7 @@ static NSLock* currentRequestsLock;
     if (error != nil)
         UnityReportWebRequestNetworkError(urequest.udata, (int)[error code]);
     UnityReportWebRequestFinishedLoadingData(urequest.udata);
+    UnityWebRequestRelease(urequest.udata);
 }
 
 @end
@@ -271,13 +291,14 @@ extern "C" void* UnityCreateWebRequestBackend(void* udata, const char* methodStr
             {
                 webOperationQueue = [[NSOperationQueue alloc] init];
                 webOperationQueue.name = @"com.unity3d.WebOperationQueue";
+                webOperationQueue.qualityOfService = NSQualityOfServiceUtility;
 
                 currentRequests = [[NSMutableArray<UnityURLRequest*> alloc] init];
                 currentRequestsLock = [[NSLock alloc] init];
 
                 NSURLSessionConfiguration* config = [NSURLSessionConfiguration defaultSessionConfiguration];
                 UnityWebRequestDelegate* delegate = [[UnityWebRequestDelegate alloc] init];
-                unityWebRequestSession = [NSURLSession sessionWithConfiguration: config delegate: delegate delegateQueue: webOperationQueue];
+                unityWebRequestSession = [NSURLSession sessionWithConfiguration: config delegate: delegate delegateQueue: nil];
             }
         });
 

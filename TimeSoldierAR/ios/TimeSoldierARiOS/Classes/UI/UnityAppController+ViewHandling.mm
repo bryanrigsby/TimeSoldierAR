@@ -28,6 +28,8 @@ extern bool _unityAppReady;
 - (void)updateAppOrientation:(UIInterfaceOrientation)orientation
 {
     _curOrientation = orientation;
+    [_unityView boundsUpdated];
+
     [_unityView willRotateToOrientation: orientation fromOrientation: (UIInterfaceOrientation)UIInterfaceOrientationUnknown];
     [_unityView didRotate];
 }
@@ -121,13 +123,8 @@ extern bool _unityAppReady;
 
 - (UIView*)createSnapshotView
 {
-    // Snapshot API appeared on iOS 7, however before iOS 8 tweaking hierarchy like that on going to
-    // background results in all kind of weird things when going back to foreground so we do snapshotting
-    // only on iOS 8 and newer.
-
-    // Note that on iPads with iOS 9 or later (up to iOS 10.2 at least) there's a bug in the iOS
-    // compositor: any use of -[UIView snapshotViewAfterScreenUpdates] causes black screen being shown
-    // temporarily when 4 finger gesture to swipe to another app in the task switcher is being performed slowly
+    // Note that on iPads with iOS 9 or later (up to iOS 10.2 at least) there's a bug in the iOS compositor: any use of -[UIView snapshotViewAfterScreenUpdates]
+    // causes black screen being shown temporarily when 4 finger gesture to swipe to another app in the task switcher is being performed slowly
 #if UNITY_SNAPSHOT_VIEW_ON_APPLICATION_PAUSE
     return [_rootView snapshotViewAfterScreenUpdates: YES];
 #else
@@ -147,12 +144,10 @@ extern bool _unityAppReady;
     NSAssert(_rootView != nil, @"_rootView  should be inited at this point");
     NSAssert(_rootController != nil, @"_rootController should be inited at this point");
 
-    [_window makeKeyAndVisible];
     [UIView setAnimationsEnabled: NO];
-
-    // TODO: extract it?
-
     ShowSplashScreen(_window);
+    // make window visible only after we have set up initial controller we want to show
+    [_window makeKeyAndVisible];
 
 #if UNITY_SUPPORT_ROTATION
     // to be able to query orientation from view controller we should actually show it.
@@ -233,7 +228,12 @@ extern bool _unityAppReady;
     _window.rootViewController = nil;
 
     // second: assign new root controller (and view hierarchy with that), restore bounds
-    _rootController = _window.rootViewController = vc;
+
+    // _rootController must be assigned the view controller first otherwise the application
+    // will hit an NSAssert on the screen orientation for apps that have default orientation
+    // autorotate but actually require landscape such as VR apps (FB 1275158)
+    _rootController = vc;
+    _window.rootViewController = vc;
     _rootController.view = _rootView;
 
     _window.bounds = [UIScreen mainScreen].bounds;

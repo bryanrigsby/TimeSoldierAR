@@ -48,10 +48,9 @@ public class TitleSceneManager : MonoBehaviour
             {
                 mainMenuCanvas.SetActive(false);                
                 AudioManager.instance.StopMusic();
-                if (PlayerPrefs.HasKey("Current_Scene"))
+                if (continueGame)
                 {
-                    continueGame = true;
-                    AudioManager.instance.PlayBGM(4);
+                    //AudioManager.instance.PlayBGM(4);
                     SceneManager.LoadScene("MainScene");
                 }
                 else
@@ -72,6 +71,7 @@ public class TitleSceneManager : MonoBehaviour
         mainMenuCanvas.SetActive(false);
         loadingCanvas.SetActive(true);
         timerBool = true;
+        continueGame = true;
     }
 
     public void NewGame()

@@ -1,11 +1,7 @@
-#include "RegisterMonoModules.h"
 #include "RegisterFeatures.h"
 #include <csignal>
-
-// Hack to work around iOS SDK 4.3 linker problem
-// we need at least one __TEXT, __const section entry in main application .o files
-// to get this section emitted at right time and so avoid LC_ENCRYPTION_INFO size miscalculation
-static const int constsection = 0;
+#include "UnityInterface.h"
+#include "../UnityFramework/UnityFramework.h"
 
 void UnityInitTrampoline();
 
@@ -16,35 +12,140 @@ const char* AppControllerClassName = "UnityAppController";
 extern "C" void SetAllUnityFunctionsForDynamicPlayerLib();
 #endif
 
-int main(int argc, char* argv[])
+extern "C" void UnitySetExecuteMachHeader(const MachHeader* header);
+
+extern "C" __attribute__((visibility("default"))) NSString* const kUnityDidUnload;
+extern "C" __attribute__((visibility("default"))) NSString* const kUnityDidQuit;
+
+@implementation UnityFramework
+{
+    int runCount;
+}
+
+UnityFramework* _gUnityFramework = nil;
++ (UnityFramework*)getInstance
+{
+    if (_gUnityFramework == nil)
+    {
+        _gUnityFramework = [[UnityFramework alloc] init];
+    }
+    return _gUnityFramework;
+}
+
+- (UnityAppController*)appController
+{
+    return GetAppController();
+}
+
+- (void)setExecuteHeader:(const MachHeader*)header
+{
+    UnitySetExecuteMachHeader(header);
+}
+
+- (void)sendMessageToGOWithName:(const char*)goName functionName:(const char*)name message:(const char*)msg
+{
+    UnitySendMessage(goName, name, msg);
+}
+
+- (void)registerFrameworkListener:(id<UnityFrameworkListener>)obj
+{
+#define REGISTER_SELECTOR(sel, notif_name)                  \
+if([obj respondsToSelector:sel])                        \
+[[NSNotificationCenter defaultCenter]   addObserver:obj selector:sel name:notif_name object:nil];
+
+    REGISTER_SELECTOR(@selector(unityDidUnload:), kUnityDidUnload);
+    REGISTER_SELECTOR(@selector(unityDidQuit:), kUnityDidQuit);
+
+#undef REGISTER_SELECTOR
+}
+
+- (void)unregisterFrameworkListener:(id<UnityFrameworkListener>)obj
+{
+    [[NSNotificationCenter defaultCenter] removeObserver: obj name: kUnityDidUnload object: nil];
+    [[NSNotificationCenter defaultCenter] removeObserver: obj name: kUnityDidQuit object: nil];
+}
+
+- (void)frameworkWarmup:(int)argc argv:(char*[])argv
 {
 #if UNITY_USES_DYNAMIC_PLAYER_LIB
     SetAllUnityFunctionsForDynamicPlayerLib();
 #endif
 
-    @autoreleasepool
-    {
-        UnityInitTrampoline();
-        UnityInitRuntime(argc, argv);
 
-        RegisterMonoModules();
-        NSLog(@"-> registered mono modules %p\n", &constsection);
-        RegisterFeatures();
+    UnityInitTrampoline();
+    UnityInitRuntime(argc, argv);
 
-        // iOS terminates open sockets when an application enters background mode.
-        // The next write to any of such socket causes SIGPIPE signal being raised,
-        // even if the request has been done from scripting side. This disables the
-        // signal and allows Mono to throw a proper C# exception.
-        std::signal(SIGPIPE, SIG_IGN);
+    RegisterFeatures();
 
-        UIApplicationMain(argc, argv, nil, [NSString stringWithUTF8String: AppControllerClassName]);
-    }
-
-    return 0;
+    // iOS terminates open sockets when an application enters background mode.
+    // The next write to any of such socket causes SIGPIPE signal being raised,
+    // even if the request has been done from scripting side. This disables the
+    // signal and allows Mono to throw a proper C# exception.
+    std::signal(SIGPIPE, SIG_IGN);
 }
 
-#if TARGET_IPHONE_SIMULATOR && TARGET_TVOS_SIMULATOR
+- (void)setDataBundleId:(const char*)bundleId
+{
+    UnitySetDataBundleDirWithBundleId(bundleId);
+}
 
+- (void)runUIApplicationMainWithArgc:(int)argc argv:(char*[])argv
+{
+    self->runCount += 1;
+    [self frameworkWarmup: argc argv: argv];
+    UIApplicationMain(argc, argv, nil, [NSString stringWithUTF8String: AppControllerClassName]);
+}
+
+- (void)runEmbeddedWithArgc:(int)argc argv:(char*[])argv appLaunchOpts:(NSDictionary*)appLaunchOpts
+{
+    if (self->runCount)
+    {
+        // initialize from partial unload ( sceneLessMode & onPause )
+        UnityLoadApplicationFromSceneLessState();
+        [self pause: false];
+        [self showUnityWindow];
+    }
+    else
+    {
+        // full initialization from ground up
+        [self frameworkWarmup: argc argv: argv];
+
+        id app = [UIApplication sharedApplication];
+
+        id appCtrl = [[NSClassFromString([NSString stringWithUTF8String: AppControllerClassName]) alloc] init];
+        [appCtrl application: app didFinishLaunchingWithOptions: appLaunchOpts];
+
+        [appCtrl applicationWillEnterForeground: app];
+        [appCtrl applicationDidBecomeActive: app];
+    }
+
+    self->runCount += 1;
+}
+
+- (void)unloadApplication
+{
+    UnityUnloadApplication();
+}
+
+- (void)quitApplication:(int)exitCode
+{
+    UnityQuitApplication(exitCode);
+}
+
+- (void)showUnityWindow
+{
+    [[[self appController] window] makeKeyAndVisible];
+}
+
+- (void)pause:(bool)pause
+{
+    UnityPause(pause);
+}
+
+@end
+
+
+#if TARGET_IPHONE_SIMULATOR && TARGET_TVOS_SIMULATOR
 #include <pthread.h>
 
 extern "C" int pthread_cond_init$UNIX2003(pthread_cond_t *cond, const pthread_condattr_t *attr)

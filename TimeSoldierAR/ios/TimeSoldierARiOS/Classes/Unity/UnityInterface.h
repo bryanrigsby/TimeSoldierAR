@@ -37,9 +37,12 @@ extern "C" {
 
 void    UnityInitRuntime(int argc, char* argv[]);
 void    UnityInitApplicationNoGraphics(const char* appPathName);
+void    UnityUnloadApplication();
+void    UnityQuitApplication(int exitCode);
 void    UnityInitApplicationGraphics();
 void    UnityCleanup();
 void    UnityLoadApplication();
+void    UnityLoadApplicationFromSceneLessState();
 void    UnityPlayerLoop();                  // normal player loop
 void    UnityBatchPlayerLoop();             // batch mode like player loop, without rendering (usable for background processing)
 void    UnitySetPlayerFocus(int focused);   // send OnApplicationFocus() message to scripts
@@ -85,6 +88,8 @@ void    UnityReloadResources();
 int     UnityIsCaptureScreenshotRequested();
 void    UnityCaptureScreenshot();
 void    UnitySendMessage(const char* obj, const char* method, const char* msg);
+void    UnityUpdateMuteState(int mute);
+void    UnityUpdateAudioOutputState();
 
 EAGLContext*        UnityGetDataContextGLES();
 
@@ -146,7 +151,10 @@ void    UnitySetAbsoluteURL(const char* url);
 
 // push notifications
 #if !PLATFORM_TVOS
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 void    UnitySendLocalNotification(UILocalNotification* notification);
+#pragma clang pop
 #endif
 void    UnitySendRemoteNotification(NSDictionary* notification);
 void    UnitySendDeviceToken(NSData* deviceToken);
@@ -187,6 +195,7 @@ void    UnityReportWebRequestResponseHeader(void* udata, const char* headerName,
 void    UnityReportWebRequestReceivedResponse(void* udata, unsigned expectedDataLength);
 void    UnityReportWebRequestReceivedData(void* udata, const void* buffer, unsigned totalRead, unsigned expectedTotal);
 void    UnityReportWebRequestFinishedLoadingData(void* udata);
+void    UnityWebRequestRelease(void* udata);
 void    UnityReportWebRequestSentData(void* udata, unsigned totalWritten, unsigned expectedTotal);
 int     UnityReportWebRequestValidateCertificate(void* udata, const void* certificateData, unsigned certificateSize);
 const void*   UnityWebRequestGetUploadData(void* udata, unsigned* bufferSize);
@@ -281,6 +290,7 @@ NSBundle*           UnityGetMetalBundle();
 MTLDeviceRef        UnityGetMetalDevice();
 MTLCommandQueueRef  UnityGetMetalCommandQueue();
 MTLCommandQueueRef  UnityGetMetalDrawableCommandQueue();
+int UnityCommandQueueMaxCommandBufferCountMTL();
 
 EAGLContext*        UnityGetDataContextEAGL();
 
@@ -338,17 +348,20 @@ const char*     UnityDeviceUniqueIdentifier();
 const char*     UnityVendorIdentifier();
 const char*     UnityAdvertisingIdentifier();
 int             UnityAdvertisingTrackingEnabled();
-int            UnityGetLowPowerModeEnabled();
-int            UnityGetWantsSoftwareDimming();
+int             UnityGetLowPowerModeEnabled();
+int             UnityGetWantsSoftwareDimming();
 void            UnitySetWantsSoftwareDimming(int enabled);
+int             UnityGetIosAppOnMac();
 const char*     UnityDeviceName();
 const char*     UnitySystemName();
 const char*     UnitySystemVersion();
 const char*     UnityDeviceModel();
 int             UnityDeviceCPUCount();
+int             UnityGetPhysicalMemory();
 int             UnityDeviceGeneration();
 float           UnityDeviceDPI();
 const char*     UnitySystemLanguage();
+int             UnityDeviceSupportsUpsideDown();
 
 // Unity/DisplayManager.mm
 EAGLContext*    UnityGetMainScreenContextGLES();
@@ -360,14 +373,12 @@ void            UnitySetBrightness(float brightness);
 float           UnityGetBrightness();
 
 // Unity/Filesystem.mm
-const char*     UnityApplicationDir();
+const char*     UnityDataBundleDir();
+void            UnitySetDataBundleDirWithBundleId(const char * bundleId);
 const char*     UnityDocumentsDir();
 const char*     UnityLibraryDir();
 const char*     UnityCachesDir();
 int             UnityUpdateNoBackupFlag(const char* path, int setFlag); // Returns 1 if successful, otherwise 0
-
-// Unity/MetalHelper.mm
-void                UnityAddNewMetalAPIImplIfNeeded(MTLDeviceRef device);
 
 // Unity/WWWConnection.mm
 void*           UnityStartWWWConnectionGet(void* udata, const void* headerDict, const char* url);

@@ -1,27 +1,22 @@
 #import "PLCrashReporter.h"
 #import "CrashReporter.h"
+
+#include "UndefinePlatforms.h"
 #include <mach-o/ldsyms.h>
+#include "RedefinePlatforms.h"
 
 extern "C" NSString* UnityGetCrashReportsPath();
 
-
 static NSUncaughtExceptionHandler* gsCrashReporterUEHandler = NULL;
 
-extern "C" uint8_t* UnityGetAppLoadAddress()
+static decltype(_mh_execute_header) * sExecuteHeader = NULL;
+extern "C" void UnitySetExecuteMachHeader(const decltype(_mh_execute_header)* header)
 {
-    // _mh_execute_header points to a mach header, and is located right at the address of where the
-    // app is loaded.
-    return (uint8_t*)&_mh_execute_header;
+    sExecuteHeader = header;
 }
 
-extern "C" const uint8_t * UnityGetAppLoadCommandAddress()
-{
-    return (const uint8_t*)(&_mh_execute_header + 1);
-}
-
-extern "C" int UnityGetAppLoadCommandCount()
-{
-    return _mh_execute_header.ncmds;
+extern "C" const decltype(_mh_execute_header) * UnityGetExecuteMachHeader() {
+    return sExecuteHeader;
 }
 
 static void SavePendingCrashReport()

@@ -24,7 +24,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: d9dbadcf8b9ea4e2b9c35d91c72aaf48, type: 2}
+  m_Clip: {fileID: 7400000, guid: c8a37475c6ace4e7cae235560307bb3d, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: d9dbadcf8b9ea4e2b9c35d91c72aaf48, type: 2}
+  m_Clip: {fileID: 7400000, guid: c8a37475c6ace4e7cae235560307bb3d, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: d9dbadcf8b9ea4e2b9c35d91c72aaf48, type: 2}
+  m_Clip: {fileID: 7400000, guid: c8a37475c6ace4e7cae235560307bb3d, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: cab55811ab9b54293af67a00d4a1f430, type: 2}
+  m_Clip: {fileID: 7400000, guid: 3ecaff487e14d427cb2b44a687d8906f, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: 8ef6391301d0a4f199f84fe0c3a0b41d, type: 2}
+  m_Clip: {fileID: 7400000, guid: 1054869d75df94ac3b4508e85eef2536, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -1457,7 +1457,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Player_Walk_Up
+    m_DisplayName: Player_Soldier_Walk_Up
   - m_Version: 1
     m_Start: 1.5
     m_ClipIn: 0
@@ -1526,7 +1526,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Player_Idle_Right
+    m_DisplayName: Player_Soldier_Idle_Right
   - m_Version: 1
     m_Start: 1.8333333333333321
     m_ClipIn: 0
@@ -1595,7 +1595,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Player_Idle_Left
+    m_DisplayName: Player_Soldier_Idle_Left
   - m_Version: 1
     m_Start: 2.1666666666666643
     m_ClipIn: 0
@@ -1664,7 +1664,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Player_Idle_Down
+    m_DisplayName: Player_Soldier_Idle_Down
   - m_Version: 1
     m_Start: 2.4999999999999964
     m_ClipIn: 0
@@ -1715,7 +1715,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Player_Idle_Up
+    m_DisplayName: Player_Soldier_Idle_Up
   - m_Version: 1
     m_Start: 10.650000000000118
     m_ClipIn: 0
@@ -1784,7 +1784,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 0
-    m_DisplayName: Player_Idle_Down
+    m_DisplayName: Player_Soldier_Idle_Down
   - m_Version: 1
     m_Start: 2.8333333333333286
     m_ClipIn: 0
@@ -1835,7 +1835,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Player_Idle_Down
+    m_DisplayName: Player_Soldier_Idle_Down
   - m_Version: 1
     m_Start: 3.999999999999991
     m_ClipIn: 0
@@ -1904,7 +1904,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Player_Walk_Up
+    m_DisplayName: Player_Soldier_Walk_Up
   - m_Version: 1
     m_Start: 4.699999999999998
     m_ClipIn: 0
@@ -1973,7 +1973,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Player_Idle_Up
+    m_DisplayName: Player_Soldier_Idle_Up
   m_Markers:
     m_Objects: []
   m_InfiniteClipPreExtrapolation: 0
@@ -2032,7 +2032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: 6ce991d027b14440182c01f5d1cc668d, type: 2}
+  m_Clip: {fileID: 7400000, guid: 3d1e5f696be5e4a25b9261498a94fe68, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -2066,7 +2066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: 6ce991d027b14440182c01f5d1cc668d, type: 2}
+  m_Clip: {fileID: 7400000, guid: 3d1e5f696be5e4a25b9261498a94fe68, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -2513,7 +2513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: cab55811ab9b54293af67a00d4a1f430, type: 2}
+  m_Clip: {fileID: 7400000, guid: 3ecaff487e14d427cb2b44a687d8906f, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -2576,7 +2576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: c7cbeed14530949bea3445e0211d1ca5, type: 2}
+  m_Clip: {fileID: 7400000, guid: f6b3eb284dce34d188d295feb14c10fa, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1

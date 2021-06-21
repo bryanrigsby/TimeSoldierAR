@@ -14,8 +14,9 @@
 - (void)createView:(BOOL)useForRendering showRightAway:(BOOL)showRightAway;
 - (void)createView:(BOOL)useForRendering;
 - (void)createWithWindow:(UIWindow*)window andView:(UIView*)view;
-- (void)initRendering;
+- (UnityDisplaySurfaceBase*)initRendering;
 - (void)recreateSurface:(RenderingSurfaceParams)params;
+- (void)destroySurface;
 
 - (void)shouldShowWindow:(BOOL)show;
 - (void)requestRenderingResolution:(CGSize)res;
@@ -46,6 +47,7 @@
 
 + (void)Initialize;
 + (DisplayManager*)Instance;
++ (void)Destroy;
 
 @property (readonly, nonatomic) DisplayConnection*  mainDisplay;
 

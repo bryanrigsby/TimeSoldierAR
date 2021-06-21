@@ -33,6 +33,8 @@
     <string>need to use camera</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>need to use location</string>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen-iPhone</string>
     <key>UILaunchStoryboardName~ipad</key>
     <string>LaunchScreen-iPad</string>
     <key>UILaunchStoryboardName~iphone</key>
@@ -43,7 +45,8 @@
     <false />
     <key>UIRequiredDeviceCapabilities</key>
     <array>
-      <string>armv7</string>
+      <string>metal</string>
+      <string>arm64</string>
       <string>arkit</string>
     </array>
     <key>UIRequiresFullScreen</key>

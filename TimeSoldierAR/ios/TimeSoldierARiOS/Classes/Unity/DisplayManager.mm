@@ -108,50 +108,63 @@ static DisplayManager* _DisplayManager = nil;
     _window.screen = show ? _screen : nil;
 }
 
-- (void)initRendering
+- (UnityDisplaySurfaceBase*)initRendering
 {
-    if (_surface == 0)
+    if (_surface)
+        return _surface;
+
+    UnityDisplaySurfaceBase* ret = NULL;
+    const int api = UnitySelectedRenderingAPI();
+    if (api == apiMetal)
     {
-        int api = UnitySelectedRenderingAPI();
-        if (api == apiMetal)
-        {
-            UnityDisplaySurfaceMTL* surf = new UnityDisplaySurfaceMTL();
-            surf->layer         = (CAMetalLayer*)_view.layer;
-            surf->device        = UnityGetMetalDevice();
-            surf->commandQueue  = [surf->device newCommandQueue];
-            surf->drawableCommandQueue = [surf->device newCommandQueue];
-            _surface = surf;
-        }
-        else
-        {
-            UnityDisplaySurfaceGLES* surf = new UnityDisplaySurfaceGLES();
-            surf->layer     = (CAEAGLLayer*)_view.layer;
-            surf->context   = UnityCreateContextEAGL(UnityGetDataContextGLES(), 0);
-            _surface = surf;
-        }
-        _surface->api   = api;
+        UnityDisplaySurfaceMTL* surf = new UnityDisplaySurfaceMTL();
+        surf->layer         = (CAMetalLayer*)_view.layer;
+        surf->device        = UnityGetMetalDevice();
+        surf->commandQueue  = [surf->device newCommandQueueWithMaxCommandBufferCount: UnityCommandQueueMaxCommandBufferCountMTL()];
+        surf->drawableCommandQueue = [surf->device newCommandQueueWithMaxCommandBufferCount: UnityCommandQueueMaxCommandBufferCountMTL()];
+        ret = surf;
     }
+    else
+    {
+        UnityDisplaySurfaceGLES* surf = new UnityDisplaySurfaceGLES();
+        surf->layer     = (CAEAGLLayer*)_view.layer;
+        surf->context   = UnityCreateContextEAGL(UnityGetDataContextGLES(), 0);
+        _surface = surf; // gles needs this set here, it doesn't go through recreateSurface on initialization
+        ret = surf;
+    }
+
+    ret->api = api;
+    return ret;
 }
 
 - (void)recreateSurface:(RenderingSurfaceParams)params
 {
-    [self initRendering];
+    UnityDisplaySurfaceBase* surface = [self initRendering];
 
+    // On metal we depend on hardware screen compositor to handle upscaling this way avoiding additional blit
     CGSize layerSize = _view.layer.bounds.size;
     float scale = _view.contentScaleFactor;
-    _screenSize = CGSizeMake(layerSize.width * scale, layerSize.height * scale);
+    CGSize screenSize = CGSizeMake(layerSize.width * scale, layerSize.height * scale);
+    // if we did request custom resolution we apply it here.
+    // for metal we use hardware scaler which will be triggered exactly because our window is not of "native" size
+    // but we also want to enforce native resolution as maximum, otherwise we might run out of memory vert fast
+    // TODO: how about supersampling screenshots? maybe there are reasonable usecases
+    if (UnitySelectedRenderingAPI() == apiMetal && params.renderW > 0 && params.renderH > 0)
+        _screenSize = CGSizeMake(fminf(screenSize.width, params.renderW), fminf(screenSize.height, params.renderH));
+    else
+        _screenSize = screenSize;
 
-    bool systemSizeChanged  = _surface->systemW != _screenSize.width || _surface->systemH != _screenSize.height;
-    bool msaaChanged        = _supportsMSAA && (_surface->msaaSamples != params.msaaSampleCount);
-    bool depthFmtChanged    = _surface->disableDepthAndStencil != params.disableDepthAndStencil;
-    bool cvCacheChanged     = _surface->useCVTextureCache != params.useCVTextureCache;
-    bool memorylessChanged  = _surface->memorylessDepth != params.metalMemorylessDepth;
+    bool systemSizeChanged  = surface->systemW != _screenSize.width || surface->systemH != _screenSize.height;
+    bool msaaChanged        = _supportsMSAA && (surface->msaaSamples != params.msaaSampleCount);
+    bool depthFmtChanged    = surface->disableDepthAndStencil != params.disableDepthAndStencil;
+    bool cvCacheChanged     = surface->useCVTextureCache != params.useCVTextureCache;
+    bool memorylessChanged  = surface->memorylessDepth != params.metalMemorylessDepth;
 
     bool renderSizeChanged  = false;
-    if ((params.renderW > 0 && _surface->targetW != params.renderW)         // changed resolution
-        ||  (params.renderH > 0 && _surface->targetH != params.renderH)     // changed resolution
-        ||  (params.renderW <= 0 && _surface->targetW != _surface->systemW) // no longer need intermediate fb
-        ||  (params.renderH <= 0 && _surface->targetH != _surface->systemH) // no longer need intermediate fb
+    if ((params.renderW > 0 && surface->targetW != params.renderW)         // changed resolution
+        ||  (params.renderH > 0 && surface->targetH != params.renderH)     // changed resolution
+        ||  (params.renderW <= 0 && surface->targetW != surface->systemW) // no longer need intermediate fb
+        ||  (params.renderH <= 0 && surface->targetH != surface->systemH) // no longer need intermediate fb
     )
     {
         renderSizeChanged = true;
@@ -161,41 +174,43 @@ static DisplayManager* _DisplayManager = nil;
     bool recreateRenderingSurface   = systemSizeChanged || renderSizeChanged || msaaChanged || cvCacheChanged;
     bool recreateDepthbuffer        = systemSizeChanged || renderSizeChanged || msaaChanged || depthFmtChanged || memorylessChanged;
 
-    _surface->disableDepthAndStencil = params.disableDepthAndStencil;
+    surface->disableDepthAndStencil = params.disableDepthAndStencil;
 
-    _surface->systemW = _screenSize.width;
-    _surface->systemH = _screenSize.height;
+    surface->systemW = _screenSize.width;
+    surface->systemH = _screenSize.height;
 
-    _surface->targetW = params.renderW > 0 ? params.renderW : _surface->systemW;
-    _surface->targetH = params.renderH > 0 ? params.renderH : _surface->systemH;
+    surface->targetW = params.renderW > 0 ? params.renderW : surface->systemW;
+    surface->targetH = params.renderH > 0 ? params.renderH : surface->systemH;
 
-    _surface->msaaSamples = _supportsMSAA ? params.msaaSampleCount : 0;
-    _surface->srgb = params.srgb;
-    _surface->wideColor = params.wideColor;
-    _surface->useCVTextureCache = params.useCVTextureCache;
-    _surface->memorylessDepth = params.metalMemorylessDepth;
+    surface->msaaSamples = _supportsMSAA ? params.msaaSampleCount : 0;
+    surface->srgb = params.srgb;
+    surface->wideColor = params.wideColor;
+    surface->useCVTextureCache = params.useCVTextureCache;
+    surface->memorylessDepth = params.metalMemorylessDepth;
 
     if (UnitySelectedRenderingAPI() == apiMetal)
     {
-        recreateSystemSurface = recreateSystemSurface || self.surfaceMTL->systemColorRB == 0;
-        self.surfaceMTL->framebufferOnly = params.metalFramebufferOnly;
+        UnityDisplaySurfaceMTL* mtlSurf = (UnityDisplaySurfaceMTL*)surface;
+        recreateSystemSurface = recreateSystemSurface || mtlSurf->systemColorRB == 0;
+        mtlSurf->framebufferOnly = params.metalFramebufferOnly;
     }
     else
-        recreateSystemSurface = recreateSystemSurface || self.surfaceGLES->systemFB == 0;
+        recreateSystemSurface = recreateSystemSurface || ((UnityDisplaySurfaceGLES*)surface)->systemFB == 0;
 
     if (recreateSystemSurface)
-        CreateSystemRenderingSurface(_surface);
+        CreateSystemRenderingSurface(surface);
     if (recreateRenderingSurface)
-        CreateRenderingSurface(_surface);
+        CreateRenderingSurface(surface);
     if (recreateDepthbuffer)
-        CreateSharedDepthbuffer(_surface);
+        CreateSharedDepthbuffer(surface);
     if (recreateSystemSurface || recreateRenderingSurface || recreateDepthbuffer)
-        CreateUnityRenderBuffers(_surface);
+        CreateUnityRenderBuffers(surface);
 
+    _surface = surface;
     UnityInvalidateDisplayDataCache((__bridge void*)_screen);
 }
 
-- (void)dealloc
+- (void)destroySurface
 {
     if (_surface)
     {
@@ -218,6 +233,11 @@ static DisplayManager* _DisplayManager = nil;
 
     delete _surface;
     _surface = 0;
+}
+
+- (void)dealloc
+{
+    NSAssert(_surface == 0, @"At this point surface should be already destroyed!");
 
     _view   = nil;
     _window = nil;
@@ -301,6 +321,11 @@ static DisplayManager* _DisplayManager = nil;
         _mainDisplay = self[[UIScreen mainScreen]];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver: self];
 }
 
 - (BOOL)displayAvailable:(UIScreen*)targetScreen;
@@ -400,8 +425,10 @@ static DisplayManager* _DisplayManager = nil;
     if (conn != nil && conn.surface != nil)
         UnityDisableRenderBuffers(conn.surface->unityColorBuffer, conn.surface->unityDepthBuffer);
 
-    [_displayConnection removeObjectForKey: screen];
+    [conn destroySurface];
     conn = nil;
+
+    [_displayConnection removeObjectForKey: screen];
     [self updateDisplayListCacheInUnity];
 }
 
@@ -418,6 +445,11 @@ static DisplayManager* _DisplayManager = nil;
         _DisplayManager = [[DisplayManager alloc] init];
 
     return _DisplayManager;
+}
+
++ (void)Destroy
+{
+    _DisplayManager = nil;
 }
 
 @end
@@ -480,11 +512,17 @@ extern "C" int UnityDisplayManager_DisplayCount()
 
 extern "C" bool UnityDisplayManager_DisplayAvailable(void* nativeDisplay)
 {
+    if (nativeDisplay == NULL)
+        return false;
+
     return [[DisplayManager Instance] displayAvailable: (__bridge UIScreen*)nativeDisplay];
 }
 
 extern "C" bool UnityDisplayManager_DisplayActive(void* nativeDisplay)
 {
+    if (nativeDisplay == NULL)
+        return false;
+
     return UnityDisplayManager_DisplayAvailable(nativeDisplay);
 }
 
@@ -614,7 +652,7 @@ extern "C" void UnityStartFrameRendering()
 extern "C" void UnityDestroyUnityRenderSurfaces()
 {
     [[DisplayManager Instance] enumerateDisplaysWithBlock:^(DisplayConnection* conn) {
-        DestroyUnityRenderBuffers(conn.surface);
+        [conn destroySurface];
     }];
 }
 

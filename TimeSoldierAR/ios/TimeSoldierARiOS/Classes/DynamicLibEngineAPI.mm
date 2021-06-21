@@ -110,6 +110,10 @@
 
     #import <UIKit/UIKit.h>
 
+    #include "External/baselib/builds/Include/PreExternalInclude.h"
+    #include <mach-o/ldsyms.h>
+    #include "External/baselib/builds/Include/PostExternalInclude.h"
+
     #include "DynamicLibEngineAPI-functions.h"
 
     #undef UnityExternCall
@@ -136,6 +140,10 @@
 
     #include "UnityRendering.h"
     #include "Classes/iPhone_Sensors.h"
+
+    #include "UndefinePlatforms.h"
+    #include <mach-o/ldsyms.h>
+    #include "RedefinePlatforms.h"
 
     #include "DynamicLibEngineAPI-functions.h"
 

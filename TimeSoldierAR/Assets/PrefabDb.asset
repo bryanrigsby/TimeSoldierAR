@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d58c52ff9f122a49a289c83a1611436, type: 3}
+  m_Name: PrefabDb
+  m_EditorClassIdentifier: 
+  Entries:
+  - MeshId: Shaman
+    Prefab: {fileID: 100086, guid: 6e0b48ec7f5348c42af7efe4859098eb, type: 3}
+  - MeshId: Guide
+    Prefab: {fileID: -927199367670048503, guid: 4c367d8e1e3034c8fa4d2029b5820ca5,
+      type: 3}
+  - MeshId: Fairy
+    Prefab: {fileID: -927199367670048503, guid: 5281cb1b17f604bbe90f3c2ad0a92c26,
+      type: 3}
+  - MeshId: Caveman1
+    Prefab: {fileID: -927199367670048503, guid: 4c367d8e1e3034c8fa4d2029b5820ca5,
+      type: 3}
+  - MeshId: Caveman2
+    Prefab: {fileID: -927199367670048503, guid: 4c367d8e1e3034c8fa4d2029b5820ca5,
+      type: 3}
+  - MeshId: Caveman3
+    Prefab: {fileID: -927199367670048503, guid: 4c367d8e1e3034c8fa4d2029b5820ca5,
+      type: 3}
+  - MeshId: Caveman4
+    Prefab: {fileID: -927199367670048503, guid: 4c367d8e1e3034c8fa4d2029b5820ca5,
+      type: 3}
+  - MeshId: Monster1
+    Prefab: {fileID: -927199367670048503, guid: a61b01e3f6efc4d40b5b526f58a01cf6,
+      type: 3}
+  - MeshId: Monster2
+    Prefab: {fileID: 100086, guid: 6e0b48ec7f5348c42af7efe4859098eb, type: 3}
+  - MeshId: Monster3
+    Prefab: {fileID: -927199367670048503, guid: 35d1e0ca80c7f9a4ea39ae1e0f6646da,
+      type: 3}
+  - MeshId: Monster4
+    Prefab: {fileID: 100086, guid: 6e0b48ec7f5348c42af7efe4859098eb, type: 3}
+  - MeshId: Monster5
+    Prefab: {fileID: -927199367670048503, guid: 9400e37bbba7a4542b55f18754602882,
+      type: 3}

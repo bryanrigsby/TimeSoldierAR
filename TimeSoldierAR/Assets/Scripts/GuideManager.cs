@@ -35,8 +35,8 @@ public class GuideManager : MonoBehaviour
 
     public void CloseGuide()
     {
-        AudioManager.instance.StopMusic();
-        AudioManager.instance.PlayBGM(7);
+        //AudioManager.instance.StopMusic();
+        //AudioManager.instance.PlayBGM(7);
         mainCanvas.SetActive(false);
         guidePanel.SetActive(false);
         GameManager.instance.arCanvas.SetActive(true);

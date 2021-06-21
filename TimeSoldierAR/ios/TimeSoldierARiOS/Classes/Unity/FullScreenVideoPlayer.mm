@@ -231,7 +231,7 @@ extern "C" void UnityPlayFullScreenVideo(const char* path, const float* color, u
     else
     {
         NSString* relPath   = path[0] == '/' ? [NSString stringWithUTF8String: path] : [NSString stringWithFormat: @"Data/Raw/%s", path];
-        NSString* fullPath  = [[NSBundle mainBundle].bundlePath stringByAppendingPathComponent: relPath];
+        NSString* fullPath  = [[NSString stringWithUTF8String: UnityDataBundleDir()] stringByAppendingPathComponent: relPath];
         url = [NSURL fileURLWithPath: fullPath];
     }
 

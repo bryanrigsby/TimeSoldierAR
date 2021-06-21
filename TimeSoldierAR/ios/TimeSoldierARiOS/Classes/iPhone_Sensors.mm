@@ -356,6 +356,8 @@ enum JoystickButtonNumbers
     BTN_R1 = 9,
     BTN_R2 = 11,
     BTN_MENU = 16,
+    BTN_L3 = 17,
+    BTN_R3 = 18,
     BTN_COUNT
 };
 
@@ -363,6 +365,10 @@ typedef struct
 {
     int buttonCode;
     bool state;
+    bool lastRecordedState;
+
+    bool StateChanged() { return state ^ lastRecordedState; }
+    void ClearRecordedState() { lastRecordedState = false; }
 } JoystickButtonState;
 
 JoystickButtonState gAggregatedJoystickState[BTN_COUNT];
@@ -407,6 +413,7 @@ extern "C" void UnityInitJoysticks()
 
             gAggregatedJoystickState[i].buttonCode = UnityStringToKey(buf);
             gAggregatedJoystickState[i].state = false;
+            gAggregatedJoystickState[i].lastRecordedState = false;
         }
 
         gJoysticksInited = true;
@@ -418,27 +425,19 @@ static NSArray* QueryControllerCollection()
     return gGameControllerClass != nil ? (NSArray*)[gGameControllerClass performSelector: @selector(controllers)] : nil;
 }
 
-static void ResetAggregatedJoystickState()
+static void HandleAggregatedJoystickState()
 {
     for (int i = 0; i < BTN_COUNT; i++)
     {
-        gAggregatedJoystickState[i].state = false;
-    }
-}
+        // Mirror button state to the aggregate controller 0.
+        if (gAggregatedJoystickState[i].StateChanged())
+        {
+            UnitySetKeyState(gAggregatedJoystickState[i].buttonCode, gAggregatedJoystickState[i].lastRecordedState);
+            gAggregatedJoystickState[i].state = gAggregatedJoystickState[i].lastRecordedState;
+        }
 
-static void SetAggregatedJoystickState()
-{
-    for (int i = 0; i < BTN_COUNT; i++)
-    {
-        UnitySetKeyState(gAggregatedJoystickState[i].buttonCode, gAggregatedJoystickState[i].state);
+        gAggregatedJoystickState[i].ClearRecordedState();
     }
-}
-
-// Mirror button input into virtual joystick 0
-static void ReportAggregatedJoystickButton(int buttonNum, int state)
-{
-    assert(buttonNum < BTN_COUNT);
-    gAggregatedJoystickState[buttonNum].state |= (bool)state;
 }
 
 static void SetJoystickButtonState(int joyNum, int buttonNum, int state)
@@ -446,7 +445,10 @@ static void SetJoystickButtonState(int joyNum, int buttonNum, int state)
     char buf[128];
     sprintf(buf, "joystick %d button %d", joyNum, buttonNum);
     UnitySetKeyState(UnityStringToKey(buf), state);
-    ReportAggregatedJoystickButton(buttonNum, state);
+    if (state && buttonNum < BTN_COUNT)
+    {
+        gAggregatedJoystickState[buttonNum].lastRecordedState = true;
+    }
 }
 
 static void ReportJoystickButton(int idx, JoystickButtonNumbers num, GCControllerButtonInput* button)
@@ -473,7 +475,6 @@ static void ReportJoystickXYZWAxes(int idx, int xaxis, int yaxis, int zaxis, int
     UnitySetJoystickPosition(idx + 1, waxis, xyzw.w);
 }
 
-#if PLATFORM_TVOS
 static void ReportJoystickMicro(int idx, GCMicroGamepad* gamepad)
 {
     GCControllerDirectionPad* dpad = [gamepad dpad];
@@ -490,39 +491,9 @@ static void ReportJoystickMicro(int idx, GCMicroGamepad* gamepad)
     ReportJoystickButton(idx, BTN_X, [gamepad buttonX]);
 }
 
-#endif
-
-static void ReportJoystickBasic(int idx, GCGamepad* gamepad)
-{
-    GCControllerDirectionPad* dpad = [gamepad dpad];
-
-    UnitySetJoystickPosition(idx + 1, 0, GetAxisValue([dpad xAxis]));
-    UnitySetJoystickPosition(idx + 1, 1, -GetAxisValue([dpad yAxis]));
-    ReportJoystickButton(idx, BTN_DPAD_UP, [dpad up]);
-    ReportJoystickButton(idx, BTN_DPAD_RIGHT, [dpad right]);
-    ReportJoystickButton(idx, BTN_DPAD_DOWN, [dpad down]);
-    ReportJoystickButton(idx, BTN_DPAD_LEFT, [dpad left]);
-
-    ReportJoystickButton(idx, BTN_A, [gamepad buttonA]);
-    ReportJoystickButton(idx, BTN_B, [gamepad buttonB]);
-    ReportJoystickButton(idx, BTN_Y, [gamepad buttonY]);
-    ReportJoystickButton(idx, BTN_X, [gamepad buttonX]);
-
-    ReportJoystickButton(idx, BTN_L1, [gamepad leftShoulder]);
-    ReportJoystickButton(idx, BTN_R1, [gamepad rightShoulder]);
-}
-
 static void ReportJoystickExtended(int idx, GCExtendedGamepad* gamepad)
 {
     GCControllerDirectionPad* dpad = [gamepad dpad];
-    GCControllerDirectionPad* leftStick = [gamepad leftThumbstick];
-    GCControllerDirectionPad* rightStick = [gamepad rightThumbstick];
-
-    UnitySetJoystickPosition(idx + 1, 0, GetAxisValue([leftStick xAxis]));
-    UnitySetJoystickPosition(idx + 1, 1, -GetAxisValue([leftStick yAxis]));
-
-    UnitySetJoystickPosition(idx + 1, 2, GetAxisValue([rightStick xAxis]));
-    UnitySetJoystickPosition(idx + 1, 3, -GetAxisValue([rightStick yAxis]));
     ReportJoystickButton(idx, BTN_DPAD_UP, [dpad up]);
     ReportJoystickButton(idx, BTN_DPAD_RIGHT, [dpad right]);
     ReportJoystickButton(idx, BTN_DPAD_DOWN, [dpad down]);
@@ -537,6 +508,29 @@ static void ReportJoystickExtended(int idx, GCExtendedGamepad* gamepad)
     ReportJoystickButton(idx, BTN_R1, [gamepad rightShoulder]);
     ReportJoystickButton(idx, BTN_L2, [gamepad leftTrigger]);
     ReportJoystickButton(idx, BTN_R2, [gamepad rightTrigger]);
+
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 12.1)
+    {
+        ReportJoystickButton(idx, BTN_L3, [gamepad valueForKey: @"leftThumbstickButton"]);
+        ReportJoystickButton(idx, BTN_R3, [gamepad valueForKey: @"rightThumbstickButton"]);
+    }
+
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 13.0)
+    {
+        ReportJoystickButton(idx, BTN_MENU, [gamepad valueForKey: @"buttonMenu"]);
+        ReportJoystickButton(idx, BTN_PAUSE, [gamepad valueForKey: @"buttonOptions"]);
+    }
+
+    // To avoid overwriting axis input with button input when axis index
+    // overlaps with button enum value, handle directional input after buttons.
+    GCControllerDirectionPad* leftStick = [gamepad leftThumbstick];
+    GCControllerDirectionPad* rightStick = [gamepad rightThumbstick];
+
+    UnitySetJoystickPosition(idx + 1, 0, GetAxisValue([leftStick xAxis]));
+    UnitySetJoystickPosition(idx + 1, 1, -GetAxisValue([leftStick yAxis]));
+
+    UnitySetJoystickPosition(idx + 1, 2, GetAxisValue([rightStick xAxis]));
+    UnitySetJoystickPosition(idx + 1, 3, -GetAxisValue([rightStick yAxis]));
 }
 
 static void SimulateAttitudeViaGravityVector(const Vector3f& gravity, Quaternion4f& currentAttitude, Vector3f& rotationRate)
@@ -567,17 +561,6 @@ static void ReportJoystickMotion(int idx, GCMotion* motion)
             attitude = {(float)motion.attitude.x, (float)motion.attitude.y, (float)motion.attitude.z, (float)motion.attitude.w};
             gotRotationData = true;
         }
-    }
-    else
-    {
-#if PLATFORM_IOS
-        // on iOS we assume that rotationRate and attitude is correct, unless
-        // hasAttitudeAndRotationRate tells us otherwise.
-        // on tvOS, rotationRate and attitude are unavailable if hasAttitudeAndRotationRate is unavailable.
-        rotationRate = {(float)motion.rotationRate.x, (float)motion.rotationRate.y, (float)motion.rotationRate.z};
-        attitude = {(float)motion.attitude.x, (float)motion.attitude.y, (float)motion.attitude.z, (float)motion.attitude.w};
-        gotRotationData = true;
-#endif
     }
 
 #if SIMULATE_ATTITUDE_FROM_GRAVITY
@@ -615,12 +598,8 @@ static void ReportJoystick(GCController* controller, int idx)
 
     if ([controller extendedGamepad] != nil)
         ReportJoystickExtended(idx, [controller extendedGamepad]);
-    else if ([controller gamepad] != nil)
-        ReportJoystickBasic(idx, [controller gamepad]);
-#if PLATFORM_TVOS
     else if ([controller microGamepad] != nil)
         ReportJoystickMicro(idx, [controller microGamepad]);
-#endif
     else
     {
         // TODO: do something with not supported gamepad profiles
@@ -690,9 +669,6 @@ extern "C" void UnityUpdateJoystickData()
     sGCMotionForwardedForCurrentFrame = false;
 #endif
 
-    // Clear aggregated joystick state
-    ResetAggregatedJoystickState();
-
     if (list != nil)
     {
         for (int i = 0; i < [list count]; i++)
@@ -707,8 +683,8 @@ extern "C" void UnityUpdateJoystickData()
     ReportFakeRemote(remoteIndex);
 #endif
 
-    // Report all aggregated joystick button in bulk
-    SetAggregatedJoystickState();
+    // Report all aggregated joystick buttons in bulk
+    HandleAggregatedJoystickState();
 }
 
 static NSString* FormatJoystickIdentifier(int idx, const char* typeString, const char* attachment, const char* vendorName)

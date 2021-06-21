@@ -475,33 +475,39 @@ static NSMutableArray<CameraCaptureDevice*> *videoCaptureDevices = nil;
     self->_resolutions = [NSMutableArray arrayWithCapacity: count];
     self->_resPresets = [NSMutableArray arrayWithCapacity: count];
     AVCaptureInput* captureInput = [AVCaptureDeviceInput deviceInputWithDevice: self->_device error: nil];
-    AVCaptureSession* captureSession = [[AVCaptureSession alloc] init];
-    [captureSession addInput: captureInput];
+
+    //Don't attempt to setup an AVCaptureSession if the user has explicitly denied permission to use the camera.
+    if (captureInput != nil)
+    {
+        AVCaptureSession* captureSession = [[AVCaptureSession alloc] init];
+
+        [captureSession addInput: captureInput];
 
 #if UNITY_HAS_COLORANDDEPTH_CAMERA
-    if (self->_kind == kWebCamColorAndDepth)
-    {
-        AVCaptureDepthDataOutput* captureDepthOutput = [[AVCaptureDepthDataOutput alloc] init];
-        if ([captureSession canSetSessionPreset: depthCaptureSessionPreset])
+        if (self->_kind == kWebCamColorAndDepth)
         {
-            [captureSession setSessionPreset: AVCaptureSessionPresetPhoto];
-            [captureSession addOutput: captureDepthOutput];
-            CMVideoDimensions dim = CMVideoFormatDescriptionGetDimensions(self->_device.activeDepthDataFormat.formatDescription); // for ColorAndDepth camera return depth buffer resolution
-            [self->_resolutions addObject: [NSValue valueWithCGSize: CGSizeMake(dim.width, dim.height)]];
-            [self->_resPresets addObject: AVCaptureSessionPresetPhoto];
-        }
-    }
-    else
-#endif
-    {
-        for (int i = 0; i < count; ++i)
-        {
-            if ([captureSession canSetSessionPreset: preset[i]])
+            AVCaptureDepthDataOutput* captureDepthOutput = [[AVCaptureDepthDataOutput alloc] init];
+            if ([captureSession canSetSessionPreset: depthCaptureSessionPreset])
             {
-                [captureSession setSessionPreset: preset[i]];
-                CMVideoDimensions dim = CMVideoFormatDescriptionGetDimensions(self->_device.activeFormat.formatDescription);
+                [captureSession setSessionPreset: AVCaptureSessionPresetPhoto];
+                [captureSession addOutput: captureDepthOutput];
+                CMVideoDimensions dim = CMVideoFormatDescriptionGetDimensions(self->_device.activeDepthDataFormat.formatDescription); // for ColorAndDepth camera return depth buffer resolution
                 [self->_resolutions addObject: [NSValue valueWithCGSize: CGSizeMake(dim.width, dim.height)]];
-                [self->_resPresets addObject: preset[i]];
+                [self->_resPresets addObject: AVCaptureSessionPresetPhoto];
+            }
+        }
+        else
+#endif
+        {
+            for (int i = 0; i < count; ++i)
+            {
+                if ([captureSession canSetSessionPreset: preset[i]])
+                {
+                    [captureSession setSessionPreset: preset[i]];
+                    CMVideoDimensions dim = CMVideoFormatDescriptionGetDimensions(self->_device.activeFormat.formatDescription);
+                    [self->_resolutions addObject: [NSValue valueWithCGSize: CGSizeMake(dim.width, dim.height)]];
+                    [self->_resPresets addObject: preset[i]];
+                }
             }
         }
     }
@@ -595,12 +601,9 @@ extern "C" void UnityEnumVideoCaptureDevices(void* udata, void(*callback)(void* 
             [CameraCaptureDevice addCameraCaptureDevice: device];
         }
 
-        if (UnityiOS100orNewer())
-        {
-            device = [AVCaptureDevice defaultDeviceWithDeviceType: AVCaptureDeviceTypeBuiltInTelephotoCamera mediaType: AVMediaTypeVideo position: AVCaptureDevicePositionBack];
-            if (device != nil)
-                [CameraCaptureDevice addCameraCaptureDevice: device];
-        }
+        device = [AVCaptureDevice defaultDeviceWithDeviceType: AVCaptureDeviceTypeBuiltInTelephotoCamera mediaType: AVMediaTypeVideo position: AVCaptureDevicePositionBack];
+        if (device != nil)
+            [CameraCaptureDevice addCameraCaptureDevice: device];
 
         if (UnityiOS102orNewer())
         {
@@ -616,6 +619,12 @@ extern "C" void UnityEnumVideoCaptureDevices(void* udata, void(*callback)(void* 
                 [CameraCaptureDevice addCameraCaptureDevice: device];
         }
     }
+
+    // we should not provide camera devices information while access has not been granted
+    // but we need to try to enumerate camera devices anyway to trigger permission request dialog
+    if ([AVCaptureDevice authorizationStatusForMediaType: AVMediaTypeVideo] != AVAuthorizationStatusAuthorized)
+        return;
+
     for (CameraCaptureDevice *cameraCaptureDevice in videoCaptureDevices)
     {
         int resCount = [cameraCaptureDevice->_resolutions count];

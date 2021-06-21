@@ -2,11 +2,23 @@
 #include "UnityInterface.h"
 #include <cstring>
 
-extern "C" const char* UnityApplicationDir()
+static NSString* bundleIdWithData = nil;
+extern "C" void UnitySetDataBundleDirWithBundleId(const char* bundleId)
+{
+    if (bundleId) bundleIdWithData = [NSString stringWithUTF8String: bundleId];
+    else bundleIdWithData = nil;
+}
+
+extern "C" const char* UnityDataBundleDir()
 {
     static const char* dir = NULL;
     if (dir == NULL)
-        dir = AllocCString([NSBundle mainBundle].bundlePath);
+    {
+        if (bundleIdWithData == nil)
+            dir = AllocCString([[NSBundle mainBundle] bundlePath]);
+        else
+            dir = AllocCString([[NSBundle bundleWithIdentifier: bundleIdWithData] bundlePath]);
+    }
     return dir;
 }
 

@@ -26,6 +26,8 @@ const Il2CppCodeGenModule g_System_IO_CompressionCodeGenModule =
 	"System.IO.Compression.dll",
 	0,
 	NULL,
+	0,
+	NULL,
 	NULL,
 	0,
 	NULL,

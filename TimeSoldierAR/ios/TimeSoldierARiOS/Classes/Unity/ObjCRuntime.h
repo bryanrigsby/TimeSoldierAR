@@ -31,8 +31,5 @@
 #define UIView_LayerClass_Enc "#8@0:4"
 #define UIViewController_supportedInterfaceOrientations_Enc "Q16@0:8"
 #define UIViewController_prefersStatusBarHidden_Enc "B16@0:8"
-#define CADisplayLink_setPreferredFramesPerSecond_Enc "v24@0:8q16"
 #define UIScreen_maximumFramesPerSecond_Enc "q16@0:8"
-#define MTLHeapDescriptor_setStorageMode_Enc "v24@0:8Q16"
-#define MTLHeapDescriptor_setSize_Enc "v24@0:8Q16"
 #define UIView_safeAreaInsets_Enc "{UIEdgeInsets=dddd}16@0:8"

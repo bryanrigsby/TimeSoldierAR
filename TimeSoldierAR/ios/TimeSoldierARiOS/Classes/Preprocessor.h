@@ -25,8 +25,12 @@
 #error Please use tvOS SDK 11.0 or newer
 #endif
 
-#if !defined(__IPHONE_9_0) || __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_9_0
-#error Please target iOS 9.0 or newer
+#if TARGET_OS_IOS && (!defined(__IPHONE_10_0) || __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_10_0)
+#error Please target iOS 10.0 or newer
+#endif
+
+#if TARGET_OS_TV && (!defined(__TVOS_10_0) || __TV_OS_VERSION_MIN_REQUIRED < __TVOS_10_0)
+#error Please target tvOS 10.0 or newer
 #endif
 
 //------------------------------------------------------------------------------
@@ -128,6 +132,7 @@
 #define UNITY_USES_WEBCAM 0
 #define UNITY_USES_MICROPHONE 0
 #define UNITY_USES_REPLAY_KIT 0
+#define UNITY_USES_IAD 0
 #define UNITY_SNAPSHOT_VIEW_ON_APPLICATION_PAUSE 0
 #define UNITY_DEVELOPER_BUILD 0
 #define UNITY_USES_DYNAMIC_PLAYER_LIB 0

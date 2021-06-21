@@ -1,5 +1,9 @@
 #include "LifeCycleListener.h"
 
+#define DEFINE_NOTIFICATION(name) extern "C" __attribute__((visibility ("default"))) NSString* const name = @#name;
+DEFINE_NOTIFICATION(kUnityDidUnload);
+DEFINE_NOTIFICATION(kUnityDidQuit);
+
 void UnityRegisterLifeCycleListener(id<LifeCycleListener> obj)
 {
     #define REGISTER_SELECTOR(sel, notif_name)                  \
@@ -16,7 +20,8 @@ void UnityRegisterLifeCycleListener(id<LifeCycleListener> obj)
     REGISTER_SELECTOR(@selector(didEnterBackground:), UIApplicationDidEnterBackgroundNotification);
     REGISTER_SELECTOR(@selector(willEnterForeground:), UIApplicationWillEnterForegroundNotification);
     REGISTER_SELECTOR(@selector(willTerminate:), UIApplicationWillTerminateNotification);
-
+    REGISTER_SELECTOR(@selector(unityDidUnload:), kUnityDidUnload);
+    REGISTER_SELECTOR(@selector(unityDidQuit:), kUnityDidQuit);
 
     #undef REGISTER_SELECTOR
 }
@@ -29,4 +34,6 @@ void UnityUnregisterLifeCycleListener(id<LifeCycleListener> obj)
     [[NSNotificationCenter defaultCenter] removeObserver: obj name: UIApplicationDidEnterBackgroundNotification object: nil];
     [[NSNotificationCenter defaultCenter] removeObserver: obj name: UIApplicationWillEnterForegroundNotification object: nil];
     [[NSNotificationCenter defaultCenter] removeObserver: obj name: UIApplicationWillTerminateNotification object: nil];
+    [[NSNotificationCenter defaultCenter] removeObserver: obj name: kUnityDidUnload object: nil];
+    [[NSNotificationCenter defaultCenter] removeObserver: obj name: kUnityDidQuit object: nil];
 }

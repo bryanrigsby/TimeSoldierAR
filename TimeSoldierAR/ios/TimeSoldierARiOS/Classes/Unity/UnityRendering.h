@@ -138,7 +138,7 @@ END_STRUCT(UnityDisplaySurfaceGLES)
 // Metal display surface
 START_STRUCT(UnityDisplaySurfaceMTL, UnityDisplaySurfaceBase)
 OBJC_OBJECT_PTR CAMetalLayer *       layer;
-OBJC_OBJECT_PTR MTLDeviceRef        device;
+OBJC_OBJECT_PTR MTLDeviceRef         device;
 
 OBJC_OBJECT_PTR MTLCommandQueueRef  commandQueue;
 OBJC_OBJECT_PTR MTLCommandQueueRef  drawableCommandQueue;
@@ -252,6 +252,8 @@ MTLTextureRef AcquireDrawableMTL(UnityDisplaySurfaceMTL* surface);
 // hence we keep normal processing for main screen, but when airplay is used we will create extra command buffers
 void PreparePresentNonMainScreenMTL(UnityDisplaySurfaceMTL* surface);
 
+void SetDrawableSizeMTL(UnityDisplaySurfaceMTL* surface, int width, int height);
+
 #ifdef __cplusplus
 } // extern "C"
 #endif
@@ -289,6 +291,8 @@ void MetalUpdateDisplaySync();
 UnityRenderBufferHandle UnityNativeRenderBufferFromHandle(void *rb);
 
 MTLCommandBufferRef UnityCurrentMTLCommandBuffer();
+
+void UnityUpdateDrawableSize(UnityDisplaySurfaceMTL* surface);
 
 #ifdef __cplusplus
 } // extern "C"
