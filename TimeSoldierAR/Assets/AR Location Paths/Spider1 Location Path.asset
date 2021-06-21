@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c63d15506dd69f48a388fc9c4976162, type: 3}
-  m_Name: Spider Location Path
+  m_Name: Spider1 Location Path
   m_EditorClassIdentifier: 
   Locations:
-  - Latitude: 35.550577615968145
-    Longitude: -97.01221286855036
+  - Latitude: 35.5505441401484
+    Longitude: -97.010682859856
     Altitude: 0
     AltitudeMode: 0
-    Label: 
-  - Latitude: 35.55072873678738
-    Longitude: -97.01189167404696
+    Label: spider1 start
+  - Latitude: 35.55086243178906
+    Longitude: -97.01051429850581
     Altitude: 0
     AltitudeMode: 0
-    Label: 
+    Label: spider1 end
   SplineType: 0
   Alpha: 0.5
   SceneViewScale: 1

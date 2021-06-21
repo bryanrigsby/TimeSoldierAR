@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c63d15506dd69f48a388fc9c4976162, type: 3}
-  m_Name: Eyeball East Location Path
+  m_Name: Eyeball2 Location Path
   m_EditorClassIdentifier: 
   Locations:
-  - Latitude: 35.55058606949945
-    Longitude: -97.01200352233109
+  - Latitude: 35.55080818925124
+    Longitude: -97.010682859856
     Altitude: 0
     AltitudeMode: 0
-    Label: 
-  - Latitude: 35.55055938244282
-    Longitude: -97.01187320453084
+    Label: eyeball2 start
+  - Latitude: 35.55063113316575
+    Longitude: -97.01052058810814
     Altitude: 0
     AltitudeMode: 0
-    Label: 
+    Label: eyeball2 end
   SplineType: 0
   Alpha: 0.5
   SceneViewScale: 1

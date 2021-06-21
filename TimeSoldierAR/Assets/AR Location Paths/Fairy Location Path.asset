@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c63d15506dd69f48a388fc9c4976162, type: 3}
-  m_Name: Zombie East Location Path
+  m_Name: Fairy Location Path
   m_EditorClassIdentifier: 
   Locations:
-  - Latitude: 35.55058606058504
-    Longitude: -97.0122097303435
+  - Latitude: 35.55093304937692
+    Longitude: -97.01099859790769
     Altitude: 0
     AltitudeMode: 0
-    Label: 
-  - Latitude: 35.55059615622986
-    Longitude: -97.01158433831998
+    Label: fairy start
+  - Latitude: 35.55093407282018
+    Longitude: -97.01094828108656
     Altitude: 0
     AltitudeMode: 0
-    Label: 
+    Label: fairy end
   SplineType: 0
   Alpha: 0.5
   SceneViewScale: 1
