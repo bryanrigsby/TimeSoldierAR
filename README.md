@@ -12,8 +12,6 @@ TODO
   
 -add world map (monsters, POI)??
 
--add dialog 
-
 -add quest completion
 
 -make mini quests
@@ -24,7 +22,6 @@ TODO
 
 -consider skills images for magic
 
--add weapon to AR
 
 
 Spell Breakdown (power/mp cost)
