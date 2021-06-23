@@ -34,7 +34,7 @@ public class FairyManager : MonoBehaviour
         fairyText.text = "Be Healed!";
 
         AudioManager.instance.ButtonSFX();
-        AudioManager.instance.PlayBGM(4);
+        AudioManager.instance.PlayBGM(10);
 
         mainCanvas.SetActive(true);
         fairyPanel.SetActive(true);

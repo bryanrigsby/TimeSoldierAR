@@ -23,15 +23,15 @@ public class CavemanTwo : MonoBehaviour
     public void OpenGuide()
     {
         AudioManager.instance.ButtonSFX();
-        AudioManager.instance.PlayBGM(4);
+        AudioManager.instance.PlayBGM(9);
         mainCanvas.SetActive(true);
         CavemanTwoPanel.SetActive(true);
     }
 
     public void CloseGuide()
     {
-        //AudioManager.instance.StopMusic();
-        //AudioManager.instance.PlayBGM(7);
+        AudioManager.instance.StopMusic();
+        AudioManager.instance.PlayBGM(7);
         mainCanvas.SetActive(false);
         CavemanTwoPanel.SetActive(false);
         GameManager.instance.arCanvas.SetActive(true);

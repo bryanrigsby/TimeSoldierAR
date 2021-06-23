@@ -22,21 +22,21 @@ public class GuideManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OpenGuide()
     {
         AudioManager.instance.ButtonSFX();
-        AudioManager.instance.PlayBGM(4);
+        AudioManager.instance.PlayBGM(11);
         mainCanvas.SetActive(true);
         guidePanel.SetActive(true);
     }
 
     public void CloseGuide()
     {
-        //AudioManager.instance.StopMusic();
-        //AudioManager.instance.PlayBGM(7);
+        AudioManager.instance.StopMusic();
+        AudioManager.instance.PlayBGM(7);
         mainCanvas.SetActive(false);
         guidePanel.SetActive(false);
         GameManager.instance.arCanvas.SetActive(true);
@@ -44,8 +44,8 @@ public class GuideManager : MonoBehaviour
 
     public void CloseOrientationGuide()
     {
-        //AudioManager.instance.StopMusic();
-        //AudioManager.instance.PlayBGM(7);
+        AudioManager.instance.StopMusic();
+        AudioManager.instance.PlayBGM(7);
         mainCanvas.SetActive(false);
         orientationGuidePanel.SetActive(false);
         GameManager.instance.arCanvas.SetActive(true);

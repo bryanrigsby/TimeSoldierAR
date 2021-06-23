@@ -62,19 +62,29 @@ public class BattleManager : MonoBehaviour
     public void StartBattle(string enemy)
     {
         AudioManager.instance.ButtonSFX();
-        AudioManager.instance.PlayBGM(0);
+        
         //choose random enemy from enemies array and pass to BattleStart
         //System.Random strRan = new System.Random();
         //int ranEnemy = strRan.Next(0, enemies.Length);
         //currentEnemy = enemies[ranEnemy];
 
-        for(int i = 0; i < enemies.Length; i++)
+        if(enemy == "Shaman")
         {
-            if(enemy == enemies[i].charName)
+            currentEnemy = enemies[6];
+            AudioManager.instance.PlayBGM(1);
+        }
+        else
+        {
+            AudioManager.instance.PlayBGM(0);
+            for (int i = 0; i < enemies.Length; i++)
             {
-                currentEnemy = enemies[i];
+                if (enemy == enemies[i].charName)
+                {
+                    currentEnemy = enemies[i];
+                }
             }
         }
+
 
         //choose random turn (1 for player, 2 for enemy) to start
         System.Random turnRan = new System.Random();
@@ -83,6 +93,7 @@ public class BattleManager : MonoBehaviour
         if(currentTurn == 1)
         {
             battleDialog.text = "Strike First!";
+            chanceToFlee = 100;
         }
         else
         {
@@ -124,6 +135,7 @@ public class BattleManager : MonoBehaviour
     public void NextTurn()
     {
         UpdateUIStats();
+        chanceToFlee = 35;
 
         if (currentEnemy.currentHp <= 0 || player.currentHp <= 0)
         {
