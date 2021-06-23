@@ -2,9 +2,9 @@
 
 TODO
 
--change cavemen music
 
--music changes after shop
+ 
+-might increase size of hp bar on monsters
 
 -reset dialog
 
