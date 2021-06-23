@@ -46,6 +46,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -96,9 +97,9 @@ MonoBehaviour:
   isEnemy: 1
   charName: Skeleton
   charImage: {fileID: 21300014, guid: 988d560df8d322a468c97243cbfd76e8, type: 3}
-  currentHp: 7
-  maxHp: 7
-  strength: 7
-  defense: 7
-  gold: 7
-  exp: 7
+  currentHp: 10
+  maxHp: 10
+  strength: 10
+  defense: 10
+  gold: 10
+  exp: 10

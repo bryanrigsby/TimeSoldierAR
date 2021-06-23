@@ -10,6 +10,12 @@ TagManager:
   - Eyeball
   - Guide
   - Shop
+  - CaveCheif
+  - Caveman1
+  - Caveman2
+  - Caveman3
+  - Shaman
+  - Trex
   layers:
   - Default
   - TransparentFX

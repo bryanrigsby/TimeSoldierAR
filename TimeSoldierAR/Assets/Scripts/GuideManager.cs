@@ -5,7 +5,7 @@ using UnityEngine;
 public class GuideManager : MonoBehaviour
 {
 
-    public GameObject mainCanvas, guidePanel;
+    public GameObject mainCanvas, guidePanel, orientationGuidePanel;
 
     
 
@@ -39,6 +39,15 @@ public class GuideManager : MonoBehaviour
         //AudioManager.instance.PlayBGM(7);
         mainCanvas.SetActive(false);
         guidePanel.SetActive(false);
+        GameManager.instance.arCanvas.SetActive(true);
+    }
+
+    public void CloseOrientationGuide()
+    {
+        //AudioManager.instance.StopMusic();
+        //AudioManager.instance.PlayBGM(7);
+        mainCanvas.SetActive(false);
+        orientationGuidePanel.SetActive(false);
         GameManager.instance.arCanvas.SetActive(true);
     }
 }

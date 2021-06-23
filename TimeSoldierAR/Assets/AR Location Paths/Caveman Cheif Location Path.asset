@@ -18,8 +18,8 @@ MonoBehaviour:
     Altitude: 0
     AltitudeMode: 0
     Label: Caveman Cheif start
-  - Latitude: 35.55057382012923
-    Longitude: -97.01088915882224
+  - Latitude: 35.5505246946368
+    Longitude: -97.010886642981
     Altitude: 0
     AltitudeMode: 0
     Label: Caveman Cheif end

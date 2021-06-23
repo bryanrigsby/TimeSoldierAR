@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7740984318179893570}
   - component: {fileID: 2914326980377760908}
   m_Layer: 0
-  m_Name: zombie
+  m_Name: Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,6 +46,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -93,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fc305e90170f4e12ae95c31b4b4d88f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isEnemy: 0
+  isEnemy: 1
   charName: Zombie
   charImage: {fileID: 21300000, guid: a8d53c4615b454748966b8a55387ca50, type: 3}
   currentHp: 25

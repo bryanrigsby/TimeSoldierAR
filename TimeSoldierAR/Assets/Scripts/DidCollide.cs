@@ -32,6 +32,26 @@ public class DidCollide : MonoBehaviour
                 Debug.Log(other.tag);
                 GuideManager.instance.OpenGuide();
             }
+            else if (other.tag == "Caveman1")
+            {
+                Debug.Log(other.tag);
+                CavemanOne.instance.OpenGuide();
+            }
+            else if (other.tag == "Caveman2")
+            {
+                Debug.Log(other.tag);
+                CavemanTwo.instance.OpenGuide();
+            }
+            else if (other.tag == "Caveman3")
+            {
+                Debug.Log(other.tag);
+                CavemanThree.instance.OpenGuide();
+            }
+            else if (other.tag == "CaveCheif")
+            {
+                Debug.Log(other.tag);
+                CaveCheif.instance.OpenGuide();
+            }
             else
             {
                 Debug.Log(other.tag);

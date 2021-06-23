@@ -18,8 +18,8 @@ MonoBehaviour:
     Altitude: 0
     AltitudeMode: 0
     Label: caveman3 start
-  - Latitude: 35.550685375823335
-    Longitude: -97.01090048010668
+  - Latitude: 35.5506055469941
+    Longitude: -97.0108916746631
     Altitude: 0
     AltitudeMode: 0
     Label: caveman3 end

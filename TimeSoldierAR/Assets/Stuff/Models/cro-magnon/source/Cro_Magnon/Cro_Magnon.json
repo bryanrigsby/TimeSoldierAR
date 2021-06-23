@@ -1,0 +1,3217 @@
+﻿{
+    "Cro_Magnon": {
+        "Version": "1.10.1822.1",
+        "Scene": {
+            "Name": true,
+            "SupportShaderSelect": true
+        },
+        "Object": {
+            "Cro_Magnon": {
+                "Generation": "RL_CharacterCreator_Base_Game_G1_Divide_Eyelash_UV",
+                "Physics": {
+                    "Collision Shapes": {
+                        "pelvis": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -0.18285416066646577,
+                                    6.882321357727051,
+                                    93.8768310546875
+                                ],
+                                "WorldRotationQ": [
+                                    0.21263301372528077,
+                                    -0.7064391374588013,
+                                    0.030848681926727296,
+                                    0.6743732690811157
+                                ],
+                                "WorldScale": [
+                                    1.000000238418579,
+                                    1.000000238418579,
+                                    1.0
+                                ],
+                                "Radius": 9.339055061340332,
+                                "Capsule Length": 22.12552833557129
+                            },
+                            "Capsule(0)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -0.40903493762016299,
+                                    7.481883525848389,
+                                    104.8759994506836
+                                ],
+                                "WorldRotationQ": [
+                                    0.03084363415837288,
+                                    -0.6743859648704529,
+                                    0.21263465285301209,
+                                    0.706426739692688
+                                ],
+                                "WorldScale": [
+                                    1.000000238418579,
+                                    1.000000238418579,
+                                    1.0
+                                ],
+                                "Radius": 9.339055061340332,
+                                "Capsule Length": 21.50324821472168
+                            }
+                        },
+                        "spine_02": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Z",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.003851294284686446,
+                                    15.0348482131958,
+                                    108.98048400878906
+                                ],
+                                "WorldRotationQ": [
+                                    -0.10062237828969956,
+                                    -0.0052513061091303829,
+                                    -0.05201322212815285,
+                                    0.9935503005981445
+                                ],
+                                "WorldScale": [
+                                    0.9999998807907105,
+                                    0.9999998807907105,
+                                    0.9999998807907105
+                                ],
+                                "Radius": 11.629992485046387,
+                                "Capsule Length": 6.390512466430664
+                            }
+                        },
+                        "upperarm_l": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    20.539196014404298,
+                                    17.375507354736329,
+                                    149.4263916015625
+                                ],
+                                "WorldRotationQ": [
+                                    0.0000028280226160859458,
+                                    0.017425766214728357,
+                                    -0.010511458851397038,
+                                    0.9997929334640503
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    0.9999997615814209,
+                                    1.0
+                                ],
+                                "Radius": 5.2370147705078129,
+                                "Capsule Length": 19.877002716064454
+                            }
+                        },
+                        "lowerarm_l": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    46.18193435668945,
+                                    17.904977798461915,
+                                    149.06736755371095
+                                ],
+                                "WorldRotationQ": [
+                                    0.000022463045752374457,
+                                    0.0056444318033754829,
+                                    -0.010779188014566899,
+                                    0.999925971031189
+                                ],
+                                "WorldScale": [
+                                    0.9999998807907105,
+                                    1.0000001192092896,
+                                    0.9999998211860657
+                                ],
+                                "Radius": 4.650129318237305,
+                                "Capsule Length": 19.088239669799806
+                            }
+                        },
+                        "upperarm_r": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -20.202306747436525,
+                                    -0.45869728922843935,
+                                    150.55288696289063
+                                ],
+                                "WorldRotationQ": [
+                                    0.9997934103012085,
+                                    0.010524546727538109,
+                                    0.017390519380569459,
+                                    4.125374175600882e-7
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    0.9999997615814209,
+                                    0.9999998211860657
+                                ],
+                                "Radius": 5.236368179321289,
+                                "Capsule Length": 19.878437042236329
+                            },
+                            "Capsule(0)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -18.867069244384767,
+                                    -3.1726129055023195,
+                                    150.03501892089845
+                                ],
+                                "WorldRotationQ": [
+                                    0.9997934103012085,
+                                    0.010524546727538109,
+                                    0.017390519380569459,
+                                    4.125374175600882e-7
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    0.9999997615814209,
+                                    0.9999998211860657
+                                ],
+                                "Radius": 4.738912582397461,
+                                "Capsule Length": 22.37859344482422
+                            }
+                        },
+                        "neck_01": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -0.1853051632642746,
+                                    10.38951587677002,
+                                    156.02267456054688
+                                ],
+                                "WorldRotationQ": [
+                                    0.07763893157243729,
+                                    -0.7029466032981873,
+                                    -0.07771295309066773,
+                                    0.7027082443237305
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    0.9999999403953552
+                                ],
+                                "Radius": 4.799605369567871,
+                                "Capsule Length": 0.18861007690429688
+                            },
+                            "Capsule(0)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Z",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -3.2890803813934328,
+                                    -1.0501540899276734,
+                                    153.46173095703126
+                                ],
+                                "WorldRotationQ": [
+                                    0.10985036939382553,
+                                    -0.00016856561705935746,
+                                    -0.000052340124966576698,
+                                    0.9939481019973755
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Radius": 6.6594977378845219,
+                                "Capsule Length": 13.492592811584473
+                            },
+                            "Capsule(1)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -6.422750949859619,
+                                    -2.7993273735046388,
+                                    145.8960723876953
+                                ],
+                                "WorldRotationQ": [
+                                    0.0952829122543335,
+                                    0.05466528609395027,
+                                    -0.49598997831344607,
+                                    0.861351728439331
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    0.9999999403953552,
+                                    0.9999999403953552
+                                ],
+                                "Radius": 6.620144844055176,
+                                "Capsule Length": 3.9281845092773439
+                            },
+                            "Capsule(2)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -6.427603244781494,
+                                    -5.856522083282471,
+                                    159.55819702148438
+                                ],
+                                "WorldRotationQ": [
+                                    0.0952829122543335,
+                                    0.05466528609395027,
+                                    -0.49598997831344607,
+                                    0.861351728439331
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    0.9999999403953552,
+                                    0.9999999403953552
+                                ],
+                                "Radius": 6.620144844055176,
+                                "Capsule Length": 3.9281845092773439
+                            }
+                        },
+                        "head": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -3.211481809616089,
+                                    11.813926696777344,
+                                    162.7191925048828
+                                ],
+                                "WorldRotationQ": [
+                                    -0.030840685591101648,
+                                    -0.7064321637153626,
+                                    0.03084905445575714,
+                                    0.7064352631568909
+                                ],
+                                "WorldScale": [
+                                    0.9999998807907105,
+                                    1.000000238418579,
+                                    1.0
+                                ],
+                                "Radius": 7.450112342834473,
+                                "Capsule Length": 8.070028305053711
+                            }
+                        },
+                        "thigh_l": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    8.14497184753418,
+                                    21.07875633239746,
+                                    97.1075668334961
+                                ],
+                                "WorldRotationQ": [
+                                    -0.01205108966678381,
+                                    -0.6969765424728394,
+                                    -0.06246866658329964,
+                                    0.7142661213874817
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0000001192092896,
+                                    1.000000238418579
+                                ],
+                                "Radius": 7.741213321685791,
+                                "Capsule Length": 33.479183197021487
+                            }
+                        },
+                        "calf_l": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    10.183618545532227,
+                                    24.593067169189454,
+                                    52.3693962097168
+                                ],
+                                "WorldRotationQ": [
+                                    0.002238092478364706,
+                                    -0.7000628709793091,
+                                    -0.0022760650608688595,
+                                    0.7140740752220154
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    0.9999998807907105,
+                                    0.9999998807907105
+                                ],
+                                "Radius": 5.811293601989746,
+                                "Capsule Length": 33.620262145996097
+                            }
+                        },
+                        "thigh_r": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -10.8112211227417,
+                                    -19.504526138305665,
+                                    97.11417388916016
+                                ],
+                                "WorldRotationQ": [
+                                    0.7117615938186646,
+                                    0.012518854811787606,
+                                    -0.6996559500694275,
+                                    0.06099356710910797
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0,
+                                    0.9999998807907105
+                                ],
+                                "Radius": 7.777103424072266,
+                                "Capsule Length": 38.07891845703125
+                            }
+                        },
+                        "calf_r": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -7.156897068023682,
+                                    -20.49761390686035,
+                                    52.13496780395508
+                                ],
+                                "WorldRotationQ": [
+                                    0.7140637636184692,
+                                    0.0023834146559238436,
+                                    -0.700072705745697,
+                                    -0.002343084430322051
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.000000238418579,
+                                    1.0000001192092896
+                                ],
+                                "Radius": 5.81044864654541,
+                                "Capsule Length": 33.614280700683597
+                            }
+                        },
+                        "Beard_Braid": {
+                            "": {
+                                "Bone Active": false,
+                                "Bound Type": "Box",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "WorldRotationQ": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Extent": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        },
+                        "Viking_Braid": {
+                            "": {
+                                "Bone Active": false,
+                                "Bone Active": false,
+                                "Bound Type": "Box",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "WorldRotationQ": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Extent": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "WorldRotationQ": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Extent": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        }
+                    }
+                },
+                "Meshes": {
+                    "CC_Game_Body": {
+                        "Materials": {
+                            "Ga_Skin_Body_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    254.00001525878907,
+                                    254.00001525878907,
+                                    254.00001525878907
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Ga_Skin_Body_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Ga_Skin_Body_Pbr_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Reflection": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Ga_Skin_Body_Pbr/Ga_Skin_Body_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Ga_Skin_Body_Pbr/Ga_Skin_Body_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Ga_Skin_Body_Pbr/Ga_Skin_Body_Pbr_HDRP.png"
+                                    }
+                                }
+                            },
+                            "Ga_Eyelash_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    123.00000762939453,
+                                    123.00000762939453,
+                                    123.00000762939453
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Ga_Eyelash_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Ga_Eyelash_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Ga_Eyelash_Pbr_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Ga_Eyelash_Pbr/Ga_Eyelash_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Ga_Eyelash_Pbr/Ga_Eyelash_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Ga_Eyelash_Pbr/Ga_Eyelash_Pbr_HDRP.png"
+                                    }
+                                }
+                            },
+                            "Std_Upper_Teeth_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    225.00001525878907,
+                                    225.00001525878907,
+                                    225.00001525878907
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Upper_Teeth_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Upper_Teeth_Pbr_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Upper_Teeth_Pbr/Std_Upper_Teeth_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Upper_Teeth_Pbr/Std_Upper_Teeth_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Upper_Teeth_Pbr/Std_Upper_Teeth_Pbr_HDRP.png"
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLTeethGum",
+                                    "Image": {
+                                        "MicroNormal": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_MicroN.png"
+                                        },
+                                        "Gradient AO": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_GradAO.png"
+                                        },
+                                        "Gums Mask": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_GumsMask.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "Flip MicroNormal Y": 1.0,
+                                        "Teeth MicroNormal Tiling": 10.0,
+                                        "Teeth MicroNormal Strength": 0.30000001192092898,
+                                        "Gums MicroNormal Tiling": 10.0,
+                                        "Gums MicroNormal Strength": 0.30000001192092898,
+                                        "Teeth Edge Color": [
+                                            80.0,
+                                            30.0,
+                                            20.0
+                                        ],
+                                        "Is Upper Teeth": 1.0,
+                                        "Teeth Brightness": 0.699999988079071,
+                                        "Teeth Desaturation": 0.10000000149011612,
+                                        "Gums Brightness": 0.8999999761581421,
+                                        "Gums Desaturation": 0.0,
+                                        "Front Roughness": 0.4000000059604645,
+                                        "Front Specular": 0.10000000149011612,
+                                        "Front AO": 1.0,
+                                        "Back AO": 0.0,
+                                        "Back Roughness": 0.0,
+                                        "Back Specular": 0.0,
+                                        "Gums Scatter": 1.0,
+                                        "Teeth Scatter": 0.5
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        166.0,
+                                        123.0,
+                                        101.0
+                                    ],
+                                    "Radius": 1.0,
+                                    "Distribution": 0.9300000071525574,
+                                    "IOR": 1.5499999523162842,
+                                    "DecayScale": 1.0,
+                                    "Lerp": 0.8999999761581421
+                                }
+                            },
+                            "Std_Lower_Teeth_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    225.00001525878907,
+                                    225.00001525878907,
+                                    225.00001525878907
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Lower_Teeth_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Lower_Teeth_Pbr_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_HDRP.png"
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLTeethGum",
+                                    "Image": {
+                                        "MicroNormal": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_MicroN.png"
+                                        },
+                                        "Gradient AO": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_GradAO.png"
+                                        },
+                                        "Gums Mask": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_GumsMask.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "Flip MicroNormal Y": 1.0,
+                                        "Teeth MicroNormal Tiling": 10.0,
+                                        "Teeth MicroNormal Strength": 0.30000001192092898,
+                                        "Gums MicroNormal Tiling": 10.0,
+                                        "Gums MicroNormal Strength": 0.30000001192092898,
+                                        "Teeth Edge Color": [
+                                            80.0,
+                                            30.0,
+                                            20.0
+                                        ],
+                                        "Is Upper Teeth": 0.0,
+                                        "Teeth Brightness": 0.699999988079071,
+                                        "Teeth Desaturation": 0.10000000149011612,
+                                        "Gums Brightness": 0.8999999761581421,
+                                        "Gums Desaturation": 0.0,
+                                        "Front Roughness": 0.4000000059604645,
+                                        "Front Specular": 0.10000000149011612,
+                                        "Front AO": 1.0,
+                                        "Back AO": 0.0,
+                                        "Back Roughness": 0.0,
+                                        "Back Specular": 0.0,
+                                        "Gums Scatter": 1.0,
+                                        "Teeth Scatter": 0.5
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        165.0,
+                                        121.0,
+                                        101.0
+                                    ],
+                                    "Radius": 1.0,
+                                    "Distribution": 0.9900000095367432,
+                                    "IOR": 1.0,
+                                    "DecayScale": 0.9300000071525574,
+                                    "Lerp": 0.8999999761581421
+                                }
+                            },
+                            "Std_Eye_R_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    229.00001525878907,
+                                    229.00001525878907,
+                                    229.00001525878907
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Eye_R_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Eye_R_Pbr_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Eye_R_Pbr/Std_Eye_R_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Eye_R_Pbr/Std_Eye_R_Pbr_HDRP.png"
+                                    }
+                                }
+                            },
+                            "Std_Cornea_R_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Opacity": 0.800000011920929,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Cornea_R_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Cornea_R_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_ao.png",
+                                        "Strength": 50.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_HDRP.png"
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLEye",
+                                    "Image": {
+                                        "Iris Normal": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_IrisN.png"
+                                        },
+                                        "Sclera Normal": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_MicroN.png"
+                                        },
+                                        "EyeBlendMap2": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_BCBMap.png"
+                                        },
+                                        "Inner Iris Mask": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_IrisMask.png"
+                                        },
+                                        "Sclera": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_Sclera.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "BlendMap2 Strength": 0.0,
+                                        "Shadow Radius": 0.3499999940395355,
+                                        "Shadow Hardness": 0.5,
+                                        "Specular Scale": 0.800000011920929,
+                                        "Is Left Eye": 1.0,
+                                        "Eye Corner Darkness Color": [
+                                            255.0,
+                                            187.9860076904297,
+                                            178.9998016357422
+                                        ],
+                                        "Iris Depth Scale": 0.597000002861023,
+                                        "_Iris Roughness": 0.0,
+                                        "Iris Color Brightness": 1.0,
+                                        "Pupil Scale": 0.9679999947547913,
+                                        "_IoR": 1.399999976158142,
+                                        "Iris Cloudy Color": [
+                                            0.0,
+                                            2.549999952316284,
+                                            2.549999952316284
+                                        ],
+                                        "Iris Inner Color": [
+                                            255.0,
+                                            223.0,
+                                            125.0
+                                        ],
+                                        "Iris Inner Scale": 0.0,
+                                        "Iris UV Radius": 0.1599999964237213,
+                                        "Iris Color": [
+                                            255.0,
+                                            255.0,
+                                            255.0
+                                        ],
+                                        "Limbus UV Width Color": 0.054999999701976779,
+                                        "Limbus Dark Scale": 9.026000022888184,
+                                        "ScleraBrightness": 0.6499999761581421,
+                                        "Sclera Roughness": 0.20000000298023225,
+                                        "Sclera Flatten Normal": 0.8999999761581421,
+                                        "Sclera Normal UV Scale": 0.7540000081062317,
+                                        "Sclera UV Radius": 0.8999999761581421
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        255.0,
+                                        255.0,
+                                        255.0
+                                    ],
+                                    "Radius": 5.0,
+                                    "Distribution": 0.9300000071525574,
+                                    "IOR": 1.5499999523162842,
+                                    "DecayScale": 1.0,
+                                    "Lerp": 0.8500000238418579
+                                }
+                            },
+                            "Std_Eye_L_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    229.00001525878907,
+                                    229.00001525878907,
+                                    229.00001525878907
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Eye_L_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Eye_L_Pbr_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Eye_L_Pbr/Std_Eye_L_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Eye_L_Pbr/Std_Eye_L_Pbr_HDRP.png"
+                                    }
+                                }
+                            },
+                            "Std_Cornea_L_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Opacity": 0.800000011920929,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Cornea_L_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Std_Cornea_L_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_L_Pbr/Std_Cornea_L_Pbr_ao.png",
+                                        "Strength": 50.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_L_Pbr/Std_Cornea_L_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_L_Pbr/Std_Cornea_L_Pbr_HDRP.png"
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLEye",
+                                    "Image": {
+                                        "Iris Normal": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_IrisN.png"
+                                        },
+                                        "Sclera Normal": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Lower_Teeth_Pbr/Std_Lower_Teeth_Pbr_MicroN.png"
+                                        },
+                                        "EyeBlendMap2": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_BCBMap.png"
+                                        },
+                                        "Inner Iris Mask": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_IrisMask.png"
+                                        },
+                                        "Sclera": {
+                                            "Texture Path": "./textures/Cro_Magnon/Cro_Magnon/CC_Game_Body/Std_Cornea_R_Pbr/Std_Cornea_R_Pbr_Sclera.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "BlendMap2 Strength": 0.0,
+                                        "Shadow Radius": 0.3499999940395355,
+                                        "Shadow Hardness": 0.5,
+                                        "Specular Scale": 0.800000011920929,
+                                        "Is Left Eye": 1.0,
+                                        "Eye Corner Darkness Color": [
+                                            255.0,
+                                            187.9860076904297,
+                                            178.9998016357422
+                                        ],
+                                        "Iris Depth Scale": 0.597000002861023,
+                                        "_Iris Roughness": 0.0,
+                                        "Iris Color Brightness": 1.0,
+                                        "Pupil Scale": 0.9679999947547913,
+                                        "_IoR": 1.399999976158142,
+                                        "Iris Cloudy Color": [
+                                            0.0,
+                                            2.549999952316284,
+                                            2.549999952316284
+                                        ],
+                                        "Iris Inner Color": [
+                                            255.0,
+                                            223.0,
+                                            125.0
+                                        ],
+                                        "Iris Inner Scale": 0.0,
+                                        "Iris UV Radius": 0.1599999964237213,
+                                        "Iris Color": [
+                                            255.0,
+                                            255.0,
+                                            255.0
+                                        ],
+                                        "Limbus UV Width Color": 0.054999999701976779,
+                                        "Limbus Dark Scale": 9.026000022888184,
+                                        "ScleraBrightness": 0.6499999761581421,
+                                        "Sclera Roughness": 0.20000000298023225,
+                                        "Sclera Flatten Normal": 0.8999999761581421,
+                                        "Sclera Normal UV Scale": 0.7540000081062317,
+                                        "Sclera UV Radius": 0.8999999761581421
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        255.0,
+                                        255.0,
+                                        255.0
+                                    ],
+                                    "Radius": 5.0,
+                                    "Distribution": 0.9300000071525574,
+                                    "IOR": 1.5499999523162842,
+                                    "DecayScale": 1.0,
+                                    "Lerp": 0.8500000238418579
+                                }
+                            }
+                        }
+                    },
+                    "Chin_Curtain_Narrow": {
+                        "Materials": {
+                            "Beard_Transparency_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Beard_Transparency_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Beard_Transparency_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Chin_Curtain_Narrow/Chin_Curtain_Narrow/Beard_Transparency_Pbr/Beard_Transparency_Pbr_ao.png",
+                                        "Strength": 90.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Chin_Curtain_Narrow/Chin_Curtain_Narrow/Beard_Transparency_Pbr/Beard_Transparency_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Chin_Curtain_Narrow/Chin_Curtain_Narrow/Beard_Transparency_Pbr/Beard_Transparency_Pbr_HDRP.png"
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Chin_Curtain_Narrow/Chin_Curtain_Narrow/Beard_Transparency_Pbr/Beard_Transparency_Pbr_Hair Root Map.png"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Chin_Curtain_Narrow/Chin_Curtain_Narrow/Beard_Transparency_Pbr/Beard_Transparency_Pbr_Hair ID Map.png"
+                                        },
+                                        "Hair Flow Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Chin_Curtain_Narrow/Chin_Curtain_Narrow/Beard_Transparency_Pbr/Beard_Transparency_Pbr_Hair Flow Map.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            255.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 1.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 0.41999998688697817,
+                                        "Hair Specular Map Strength": 0.11999999731779099,
+                                        "Specular Strength": 1.1200000047683716,
+                                        "Secondary Specular Strength": 1.0,
+                                        "Transmission Strength": 0.1120000034570694,
+                                        "No Back Face Triangles": 0.5,
+                                        "VertexGrayToColor": [
+                                            6.0,
+                                            2.0,
+                                            0.0
+                                        ],
+                                        "VertexColorStrength": 1.0,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            32.0,
+                                            12.0,
+                                            4.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            255.0,
+                                            239.0,
+                                            196.0
+                                        ],
+                                        "_1st Dye Strength": 0.23999999463558198,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            195.8144989013672,
+                                            195.8144989013672,
+                                            255.0
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 1.0,
+                                        "Invert 1st Dye RootMap Mask": 0.5370000004768372,
+                                        "_1st Dye add Specular": 0.0,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            235.0,
+                                            223.0,
+                                            196.0
+                                        ],
+                                        "_2nd Dye Strength": 0.8790000081062317,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            61.913997650146487,
+                                            255.0,
+                                            255.02549743652345
+                                        ],
+                                        "_2nd BlendMode": 3.0,
+                                        "Mask 2nd Dye by RootMap": 0.0,
+                                        "Invert 2nd Dye RootMap Mask": 0.0,
+                                        "_2nd Dye add Specular": 0.0,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": 0.05000000074505806,
+                                        "BlackColor Reflection Offset Y": -0.10000000149011612,
+                                        "BlackColor Reflection Offset Z": 0.05000000074505806,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": -0.029999999329447748,
+                                        "WhiteColor Reflection Offset Y": 0.10000000149011612,
+                                        "WhiteColor Reflection Offset Z": 0.11999999731779099,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Mustache_Chevron": {
+                        "Materials": {
+                            "Beard_Transparency_0_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Beard_Transparency_0_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Beard_Transparency_0_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Mustache_Chevron/Mustache_Chevron/Beard_Transparency_0_Pbr/Beard_Transparency_0_Pbr_ao.png",
+                                        "Strength": 90.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Mustache_Chevron/Mustache_Chevron/Beard_Transparency_0_Pbr/Beard_Transparency_0_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Mustache_Chevron/Mustache_Chevron/Beard_Transparency_0_Pbr/Beard_Transparency_0_Pbr_HDRP.png"
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Mustache_Chevron/Mustache_Chevron/Beard_Transparency_0_Pbr/Beard_Transparency_0_Pbr_Hair Root Map.png"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Mustache_Chevron/Mustache_Chevron/Beard_Transparency_0_Pbr/Beard_Transparency_0_Pbr_Hair ID Map.png"
+                                        },
+                                        "Hair Flow Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Mustache_Chevron/Mustache_Chevron/Beard_Transparency_0_Pbr/Beard_Transparency_0_Pbr_Hair Flow Map.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            255.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 1.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 0.41999998688697817,
+                                        "Hair Specular Map Strength": 0.11999999731779099,
+                                        "Specular Strength": 1.1200000047683716,
+                                        "Secondary Specular Strength": 1.0,
+                                        "Transmission Strength": 0.1120000034570694,
+                                        "No Back Face Triangles": 0.5,
+                                        "VertexGrayToColor": [
+                                            6.0,
+                                            2.0,
+                                            0.0
+                                        ],
+                                        "VertexColorStrength": 1.0,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            255.0,
+                                            239.0,
+                                            196.0
+                                        ],
+                                        "_1st Dye Strength": 0.6190000176429749,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            37.40849685668945,
+                                            40.67250061035156,
+                                            116.84100341796875
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 0.7490000128746033,
+                                        "Invert 1st Dye RootMap Mask": 0.0,
+                                        "_1st Dye add Specular": 0.0,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            235.0,
+                                            223.0,
+                                            196.0
+                                        ],
+                                        "_2nd Dye Strength": 0.35199999809265139,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            125.89350128173828,
+                                            125.89350128173828,
+                                            191.0970001220703
+                                        ],
+                                        "_2nd BlendMode": 0.0,
+                                        "Mask 2nd Dye by RootMap": 1.0,
+                                        "Invert 2nd Dye RootMap Mask": 0.5,
+                                        "_2nd Dye add Specular": 0.0,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": 0.05000000074505806,
+                                        "BlackColor Reflection Offset Y": -0.10000000149011612,
+                                        "BlackColor Reflection Offset Z": 0.029999999329447748,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": -0.029999999329447748,
+                                        "WhiteColor Reflection Offset Y": 0.10000000149011612,
+                                        "WhiteColor Reflection Offset Z": -0.10000000149011612,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Sideburns_Thick": {
+                        "Materials": {
+                            "Beard_Transparency_1_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Beard_Transparency_1_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Beard_Transparency_1_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Sideburns_Thick/Sideburns_Thick/Beard_Transparency_1_Pbr/Beard_Transparency_1_Pbr_ao.png",
+                                        "Strength": 79.99999237060547,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Sideburns_Thick/Sideburns_Thick/Beard_Transparency_1_Pbr/Beard_Transparency_1_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Sideburns_Thick/Sideburns_Thick/Beard_Transparency_1_Pbr/Beard_Transparency_1_Pbr_HDRP.png"
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Sideburns_Thick/Sideburns_Thick/Beard_Transparency_1_Pbr/Beard_Transparency_1_Pbr_Hair Root Map.png"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Sideburns_Thick/Sideburns_Thick/Beard_Transparency_1_Pbr/Beard_Transparency_1_Pbr_Hair ID Map.png"
+                                        },
+                                        "Hair Flow Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Sideburns_Thick/Sideburns_Thick/Beard_Transparency_1_Pbr/Beard_Transparency_1_Pbr_Hair Flow Map.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            255.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 1.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 0.41999998688697817,
+                                        "Hair Specular Map Strength": 0.11999999731779099,
+                                        "Specular Strength": 1.1200000047683716,
+                                        "Secondary Specular Strength": 1.0,
+                                        "Transmission Strength": 0.1120000034570694,
+                                        "No Back Face Triangles": 0.5,
+                                        "VertexGrayToColor": [
+                                            6.0,
+                                            2.0,
+                                            0.0
+                                        ],
+                                        "VertexColorStrength": 1.0,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            255.0,
+                                            239.0,
+                                            196.0
+                                        ],
+                                        "_1st Dye Strength": 0.6690000295639038,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            86.0625,
+                                            187.29750061035157,
+                                            187.29750061035157
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 1.0,
+                                        "Invert 1st Dye RootMap Mask": 0.0,
+                                        "_1st Dye add Specular": 0.0,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            235.0,
+                                            223.0,
+                                            196.0
+                                        ],
+                                        "_2nd Dye Strength": 0.8069999814033508,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            61.913997650146487,
+                                            61.913997650146487,
+                                            131.78399658203126
+                                        ],
+                                        "_2nd BlendMode": 0.0,
+                                        "Mask 2nd Dye by RootMap": 1.0,
+                                        "Invert 2nd Dye RootMap Mask": 1.0,
+                                        "_2nd Dye add Specular": 0.0,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": 0.05000000074505806,
+                                        "BlackColor Reflection Offset Y": -0.10000000149011612,
+                                        "BlackColor Reflection Offset Z": 0.05000000074505806,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": -0.029999999329447748,
+                                        "WhiteColor Reflection Offset Y": 0.10000000149011612,
+                                        "WhiteColor Reflection Offset Z": 0.11999999731779099,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Pauldron": {
+                        "Materials": {
+                            "Pauldron_Tra": {
+                                "Material Type": "Tra",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    150.0,
+                                    150.0,
+                                    150.0
+                                ],
+                                "Ambient Color": [
+                                    12.973402976989746,
+                                    12.973402976989746,
+                                    12.973402976989746
+                                ],
+                                "Specular Color": [
+                                    150.0,
+                                    150.0,
+                                    150.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Specular": 0.0,
+                                "Glossiness": 0.02000000700354576,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Pauldron_Tra_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Pauldron_Tra_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Pauldron_Tra_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Pauldron/Pauldron/Pauldron_Tra/Pauldron_Tra_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Pauldron/Pauldron/Pauldron_Tra/Pauldron_Tra_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "barbaro_leather_armor_001": {
+                        "Materials": {
+                            "Material_014_Tra": {
+                                "Material Type": "Tra",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    163.1999969482422,
+                                    163.1999969482422,
+                                    163.1999969482422
+                                ],
+                                "Ambient Color": [
+                                    12.973402976989746,
+                                    12.973402976989746,
+                                    12.973402976989746
+                                ],
+                                "Specular Color": [
+                                    163.1999969482422,
+                                    163.1999969482422,
+                                    163.1999969482422
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.6000000238418579,
+                                "Specular": 0.5,
+                                "Glossiness": 0.2900000214576721,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Material_014_Tra_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Material_014_Tra_Specular.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Cro_Magnon/barbaro_leather_armor_001/barbaro_leather_armor_001/Material_014_Tra/Material_014_Tra_Glow.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Displacement": {
+                                        "Texture Path": "./textures/Cro_Magnon/barbaro_leather_armor_001/barbaro_leather_armor_001/Material_014_Tra/Material_014_Tra_Displacement.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ],
+                                        "Displacement Map": "Gray Scale Displacement",
+                                        "Tessellation Level": 1.0,
+                                        "Multiplier": 1.0,
+                                        "Gray-scale Base Value": 0.5
+                                    },
+                                    "Blend": {
+                                        "Texture Path": "./textures/Cro_Magnon/barbaro_leather_armor_001/barbaro_leather_armor_001/Material_014_Tra/Material_014_Tra_blend_multiply.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ],
+                                        "Blend Mode": "Multiply"
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Material_014_Tra_Bump.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/barbaro_leather_armor_001/barbaro_leather_armor_001/Material_014_Tra/Material_014_Tra_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/barbaro_leather_armor_001/barbaro_leather_armor_001/Material_014_Tra/Material_014_Tra_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Haircut": {
+                        "Materials": {
+                            "obj_default_Transparency_Tra": {
+                                "Material Type": "Tra",
+                                "MultiUV Index": 0,
+                                "Node Type": "Hair",
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    204.0,
+                                    204.0,
+                                    204.0
+                                ],
+                                "Ambient Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Specular Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Specular": 0.0,
+                                "Glossiness": 0.10000000149011612,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/obj_default_Transparency_Tra_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/obj_default_Transparency_Tra_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Beard_Braid": {
+                        "Materials": {
+                            "Beard_Transparency_2_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Beard_Transparency_2_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Beard_Transparency_2_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Beard_Braid/Beard_Braid/Beard_Transparency_2_Pbr/Beard_Transparency_2_Pbr_ao.png",
+                                        "Strength": 90.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Beard_Braid/Beard_Braid/Beard_Transparency_2_Pbr/Beard_Transparency_2_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Beard_Braid/Beard_Braid/Beard_Transparency_2_Pbr/Beard_Transparency_2_Pbr_HDRP.png"
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Beard_Braid/Beard_Braid/Beard_Transparency_2_Pbr/Beard_Transparency_2_Pbr_Hair Root Map.png"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Beard_Braid/Beard_Braid/Beard_Transparency_2_Pbr/Beard_Transparency_2_Pbr_Hair ID Map.png"
+                                        },
+                                        "Hair Flow Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Beard_Braid/Beard_Braid/Beard_Transparency_2_Pbr/Beard_Transparency_2_Pbr_Hair Flow Map.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            255.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 1.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 0.3499999940395355,
+                                        "Hair Specular Map Strength": 0.15000000596046449,
+                                        "Specular Strength": 1.1200000047683716,
+                                        "Secondary Specular Strength": 1.0,
+                                        "Transmission Strength": 0.1120000034570694,
+                                        "No Back Face Triangles": 0.5,
+                                        "VertexGrayToColor": [
+                                            6.0,
+                                            2.0,
+                                            0.0
+                                        ],
+                                        "VertexColorStrength": 1.0,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            255.0,
+                                            239.0,
+                                            196.0
+                                        ],
+                                        "_1st Dye Strength": 0.6190000176429749,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            37.40849685668945,
+                                            116.84100341796875,
+                                            116.84100341796875
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 0.7490000128746033,
+                                        "Invert 1st Dye RootMap Mask": 0.0,
+                                        "_1st Dye add Specular": 0.0,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            235.0,
+                                            223.0,
+                                            196.0
+                                        ],
+                                        "_2nd Dye Strength": 0.35199999809265139,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            125.89350128173828,
+                                            125.89350128173828,
+                                            191.0970001220703
+                                        ],
+                                        "_2nd BlendMode": 0.0,
+                                        "Mask 2nd Dye by RootMap": 1.0,
+                                        "Invert 2nd Dye RootMap Mask": 0.5,
+                                        "_2nd Dye add Specular": 0.0,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": 0.05000000074505806,
+                                        "BlackColor Reflection Offset Y": -0.10000000149011612,
+                                        "BlackColor Reflection Offset Z": 0.05000000074505806,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": -0.029999999329447748,
+                                        "WhiteColor Reflection Offset Y": 0.10000000149011612,
+                                        "WhiteColor Reflection Offset Z": 0.11999999731779099,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            },
+                            "Bead_Transparency_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Bead_Transparency_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Bead_Transparency_Pbr_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Beard_Braid/Beard_Braid/Bead_Transparency_Pbr/Bead_Transparency_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Beard_Braid/Beard_Braid/Bead_Transparency_Pbr/Bead_Transparency_Pbr_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Viking_Braid": {
+                        "Materials": {
+                            "Hair_Transparency_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Hair_Transparency_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Hair_Transparency_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_Pbr/Hair_Transparency_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_Pbr/Hair_Transparency_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_Pbr/Hair_Transparency_Pbr_HDRP.png"
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_Pbr/Hair_Transparency_Pbr_Hair Root Map.png"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_Pbr/Hair_Transparency_Pbr_Hair ID Map.png"
+                                        },
+                                        "Hair Flow Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_Pbr/Hair_Transparency_Pbr_Hair Flow Map.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            255.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 1.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 0.6650000214576721,
+                                        "Hair Specular Map Strength": 0.0729999989271164,
+                                        "Specular Strength": 1.1180000305175782,
+                                        "Secondary Specular Strength": 0.906000018119812,
+                                        "Transmission Strength": 0.01899999938905239,
+                                        "No Back Face Triangles": 1.0,
+                                        "VertexGrayToColor": [
+                                            6.0,
+                                            2.0,
+                                            0.0
+                                        ],
+                                        "VertexColorStrength": 1.0,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            255.0,
+                                            239.0,
+                                            196.0
+                                        ],
+                                        "_1st Dye Strength": 0.6190000176429749,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            37.40849685668945,
+                                            116.84100341796875,
+                                            116.84100341796875
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 0.7490000128746033,
+                                        "Invert 1st Dye RootMap Mask": 0.0,
+                                        "_1st Dye add Specular": 0.0,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            235.0,
+                                            223.0,
+                                            196.0
+                                        ],
+                                        "_2nd Dye Strength": 0.35199999809265139,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            125.89350128173828,
+                                            125.89350128173828,
+                                            191.0970001220703
+                                        ],
+                                        "_2nd BlendMode": 0.0,
+                                        "Mask 2nd Dye by RootMap": 1.0,
+                                        "Invert 2nd Dye RootMap Mask": 0.5,
+                                        "_2nd Dye add Specular": 0.0,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": 0.0,
+                                        "BlackColor Reflection Offset Y": 0.0,
+                                        "BlackColor Reflection Offset Z": 0.0,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": 0.0,
+                                        "WhiteColor Reflection Offset Y": 0.0,
+                                        "WhiteColor Reflection Offset Z": 0.0,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            },
+                            "Ring_Transparency_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Ring_Transparency_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Ring_Transparency_Pbr_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Ring_Transparency_Pbr/Ring_Transparency_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Ring_Transparency_Pbr/Ring_Transparency_Pbr_HDRP.png"
+                                    }
+                                }
+                            },
+                            "Hair_Transparency_0_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Hair_Transparency_0_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Hair_Transparency_0_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_0_Pbr/Hair_Transparency_0_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_0_Pbr/Hair_Transparency_0_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_0_Pbr/Hair_Transparency_0_Pbr_HDRP.png"
+                                    }
+                                },
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_0_Pbr/Hair_Transparency_0_Pbr_Hair Root Map.png"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_0_Pbr/Hair_Transparency_0_Pbr_Hair ID Map.png"
+                                        },
+                                        "Hair Flow Map": {
+                                            "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Hair_Transparency_0_Pbr/Hair_Transparency_0_Pbr_Hair Flow Map.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            255.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 1.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 0.6650000214576721,
+                                        "Hair Specular Map Strength": 0.0729999989271164,
+                                        "Specular Strength": 1.1180000305175782,
+                                        "Secondary Specular Strength": 0.906000018119812,
+                                        "Transmission Strength": 0.01899999938905239,
+                                        "No Back Face Triangles": 1.0,
+                                        "VertexGrayToColor": [
+                                            6.0,
+                                            2.0,
+                                            0.0
+                                        ],
+                                        "VertexColorStrength": 1.0,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            20.0,
+                                            11.0,
+                                            6.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            255.0,
+                                            239.0,
+                                            196.0
+                                        ],
+                                        "_1st Dye Strength": 0.6190000176429749,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            37.40849685668945,
+                                            116.84100341796875,
+                                            116.84100341796875
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 0.7490000128746033,
+                                        "Invert 1st Dye RootMap Mask": 0.0,
+                                        "_1st Dye add Specular": 0.0,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            235.0,
+                                            223.0,
+                                            196.0
+                                        ],
+                                        "_2nd Dye Strength": 0.35199999809265139,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            125.89350128173828,
+                                            125.89350128173828,
+                                            191.0970001220703
+                                        ],
+                                        "_2nd BlendMode": 0.0,
+                                        "Mask 2nd Dye by RootMap": 1.0,
+                                        "Invert 2nd Dye RootMap Mask": 0.5,
+                                        "_2nd Dye add Specular": 0.0,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": 0.0,
+                                        "BlackColor Reflection Offset Y": 0.0,
+                                        "BlackColor Reflection Offset Z": 0.0,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": 0.0,
+                                        "WhiteColor Reflection Offset Y": 0.0,
+                                        "WhiteColor Reflection Offset Z": 0.0,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            },
+                            "Ring_Transparency_0_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Ring_Transparency_0_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Cro_Magnon.fbm/Ring_Transparency_0_Pbr_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Ring_Transparency_0_Pbr/Ring_Transparency_0_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/Cro_Magnon/Viking_Braid/Viking_Braid/Ring_Transparency_0_Pbr/Ring_Transparency_0_Pbr_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
